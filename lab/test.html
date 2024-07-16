@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Test Lab | jefbecker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test Lab">
+  <meta property="og:image" content="https://jefbecker.com/thumb.png">
+  <link rel="icon" type="image/png" href="/images/avatar_yellow.png">
+  <link rel="alternate" type="application/atom+xml" title="en-US Feed" href="https://jefbecker.com/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="pt-BR Feed" href="https://jefbecker.com/feed_pt.xml">
+  <link rel="me" href="https://mastodon.social/@jefbecker">
+  <link rel="stylesheet" type="text/css" href="/lab/style_lab.css">
+</head>
+
+<body>
+  <header class="lab">
+    <h1>JEFBECKER</h1>
+    <nav>
+      <a aria-current="page" href="/lab/test.html" title="Go to LAB" class="button">LAB</a>
+      <a href="/lab/test2.html" class="button" style="color: #222;">LAB2</a>
+      <a href="/lab/test3.html" class="button" style="color: #222;">LAB3</a>
+      <a href="/lab/test4.html" class="button" style="color: #222;">LAB4</a>
+    </nav>
+  </header>
+
+  <a aria-current="page" href="/lab.html" class="button">en-US</button></a>
+  <a href="index.html" class="button">en-US</button></a>
+
+  <div class="title">
+    <h1 style="text-align: center;"><span class="emoji" aria-hidden="true">☢️ </span>Test Lab<span class="emoji" aria-hidden="true"> ☢️</span></h1>
+  </div>
+
+  <article>
+    <div class="title">
+      <h1><code style="font-family: system-ui">nº <span id="hitcount_br"></span>.</code><br><code style="font-family: system-ui">Última atualização: <span id="lastupdate_br"></span>.</code></h1>
+      <h1><code style="font-family: system-ui"># <span id="hitcount"></span>.</code><br><code style="font-family: system-ui">Last Updated: <span id="lastupdate"></span>.</code></h1>
+      <hr>
+      <!--=================================================================================-->
+      <br>
+      <div class="card center">
+        <h2>Latest played song on last.fm</h2>
+        <p>&#127911; <a href="https://www.last.fm/user/jefbecker/library"><span id="song"></span></a></p>
+          <hr>
+        <p><small>powered by <a href="https://github.com/biancarosa/lastfm-last-played" target="_blank">@biancarosa</a></small></p>
+      </div>
+      <br>
+      <!--=================================================================================-->
+      <div class="card center">
+        <h2>Latest status.cafe updates</h2>
+        <span id="statusCafe-emoji"></span>
+        <a href="https://status.cafe/users/jefbecker"><span id="statusCafe-status">No recent update</span></a>
+        <hr>
+        <p><small><span id="statusCafe-time"></span> via <a href="https://status.cafe/users/jefbecker.atom">status.cafe Feed</a></small></p>
+      </div>
+      <br>
+      <!--=================================================================================-->
+      <div id="comments"></div>
+  </article>
+
+  <footer class="lab">
+    <a href="/images/button_avatar_yellow.png"><img src="/images/button_avatar_yellow.png" alt="88x31 button" style="width:88px; height: 31px;" class="responsive"></a><br>
+    <a style="color: #ffffff;" href="/privacy.html" title="Privacy Policy"><strong>Privacy Policy</strong></a> |
+    <a style="color: #ffffff;" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0"><strong>CC-BY-NC-SA 4.0</strong></a>
+    <p id="date"></p>
+  </footer>
+  <script src="/scripts/since.js"></script>
+  <script src="/scripts/hitcount_en.js"></script>
+  <script src="/scripts/hitcount_pt.js"></script>
+  <script src="/scripts/lastplayed.js"></script>
+  <script src="/scripts/status.js"></script>
+  <script src="/comment-widget/comments.js"></script>
+</body>
+
+</html>

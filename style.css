@@ -1,0 +1,479 @@
+* {
+  box-sizing: border-box;
+}
+
+.skip-to-main-content-link {
+  padding-left: 0.625em;
+  position: absolute;
+  transform: translateY(-500%);
+}
+
+.skip-to-main-content-link:focus {
+  transform: translateY(0%);
+}
+
+body {
+  margin: 0.625em auto;
+  max-width: 50em;
+  line-height: 1.6;
+  font-size: 1em;
+  padding: 0 0.625em;
+  font-family: system-ui;
+}
+
+header {
+  margin: 0.625em auto;
+  max-width: 50em;
+  line-height: 1.6;
+  font-size: 1em;
+  padding: 0.625em;
+  font-family: system-ui;
+  text-align: center;
+  border-radius: 0.25em;
+}
+
+.title {
+  padding: 0 0.625em;
+}
+
+article {
+  margin: 0.625em auto;
+  padding: 0 0.625em;
+}
+
+code {
+  font-size: medium;
+  border-radius: 0.25em;
+  padding: 0.1875em;
+}
+
+blockquote {
+  font-size: 0.875em;
+  padding-left: 0.625em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding-left: 1.25em;
+}
+
+summary {
+  padding: 0.1875em;
+  padding-left: 0.625em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+details {
+  padding-top: 0.3125em;
+  padding-bottom: 0.3125em;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0.25em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+td,
+th {
+  border: 0.0625em solid #e5e5e5;
+  text-align: left;
+  padding: 0.5em;
+}
+
+form {
+  cursor: pointer;
+  border-radius: 0.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.atx {
+  line-height: 1;
+  font-family: system-ui;
+  font-size: 1em;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container>div {
+  padding: 0.625em;
+  font-family: system-ui;
+  text-align: center;
+}
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  padding: 0.625em;
+  border-radius: 0.25em;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #e5e5e5;
+  }
+
+  header {
+    background-color: #333;
+
+    /* Header decoration 
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: image-set("/images/lights.png"); */
+  }
+
+  footer {
+    background-color: #333;
+
+    /* Footer decoration 
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: image-set("/lights.png"); */
+  }
+
+  blockquote {
+    font-size: 0.875em;
+    padding-left: 0.625em;
+    border-left: 0.3125em solid #333;
+  }
+
+  code {
+    background-color: #333;
+  }
+
+  button {
+    background-color: #e5e5e5;
+    color: #333;
+  }
+
+  summary {
+    background-color: #333;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 0.3125em 0.625em;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -0.3125em;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 37.5em) {
+    .column {
+      width: 100%;
+      margin-bottom: 0.625em;
+    }
+  }
+
+  .card {
+    padding: 1em;
+    overflow: auto;
+    border-radius: 0.25em;
+    background-color: #333;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active {
+    background-color: #055252 !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    border-color: #000 #545454 #545454 #000 !important;
+  }
+
+  .btn a {
+    padding: 0 0.3125em;
+    padding-bottom: 0.1em;
+    text-align: start;
+    margin: auto;
+    cursor: pointer;
+    border: 0.125em solid #222;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:link {
+    color: #222;
+    background-color: #e5e5e5;
+    text-decoration: none;
+  }
+
+  .btn a:visited {
+    padding: 0.0625em;
+    margin: auto;
+    color: #222;
+    background-color: #e5e5e5;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:focus {
+    border: 0.125em solid #222;
+    border-radius: 0.25em;
+    font-weight: normal;
+  }
+
+  .btn a:hover {
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:active {
+    border-color: #000 #545454 #545454 #000;
+  }
+
+  a {
+    padding: 0;
+    outline-color: transparent;
+  }
+
+  a:link {
+    color: #26D9D6;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #D1E6E5;
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline-color: transparent;
+    font-weight: normal;
+    /*outline-width: 0.125em;
+    outline-style: solid;
+    border-radius: 0.25em;
+    outline-color: #26D9D6;*/
+  }
+
+  a:hover {
+    outline-color: transparent;
+    color: #26D9D6;
+    text-decoration: underline;
+  }
+
+  a:active {
+    outline-color: transparent;
+    font-weight: normal;
+  }
+
+}
+
+@media only screen and (prefers-color-scheme: light) {
+  header {
+    background-color: #e5e5e5;
+
+    /* Header decoration 
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: image-set("/images/lights.png"); */
+  }
+
+  footer {
+    background-color: #e5e5e5;
+
+    /* Footer decoration 
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: image-set("/lights.png"); */
+  }
+
+  code {
+    background-color: #e5e5e5;
+  }
+
+  blockquote {
+    border-left: 0.3125em solid #e5e5e5;
+  }
+
+  summary {
+    background-color: #e5e5e5;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 0.3125em 0.625em;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -0.3125em;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 37.5em) {
+    .column {
+      width: 100%;
+      margin-bottom: 0.625em;
+    }
+  }
+
+  .card {
+    padding: 1em;
+    overflow: auto;
+    border-radius: 0.25em;
+    background-color: #e5e5e5;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    background-color: #333;
+    color: #e5e5e5;
+  }
+
+  .active {
+    background-color: #055252 !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    border-color: #000 #545454 #545454 #000 !important;
+  }
+
+  .btn a {
+    padding: 0 0.3125em;
+    padding-bottom: 0.1em;
+    text-align: start;
+    margin: auto;
+    cursor: pointer;
+    border: 0.125em solid #222;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:link {
+    color: #222;
+    background-color: #e5e5e5;
+    text-decoration: none;
+  }
+
+  .btn a:visited {
+    padding: 0.0625em;
+    margin: auto;
+    color: #222;
+    background-color: #e5e5e5;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:focus {
+    border: 0.125em solid #222;
+    border-radius: 0.25em;
+    font-weight: normal;
+  }
+
+  .btn a:hover {
+    border-color: #545454 #000 #000 #545454;
+  }
+
+  .btn a:active {
+    border-color: #000 #545454 #545454 #000;
+  }
+
+  a {
+    padding: 0;
+    outline-color: transparent;
+  }
+
+  a:link {
+    color: #055252;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline-color: transparent;
+    font-weight: normal;
+    /*outline-width: 0.125em;
+    outline-style: solid;
+    border-radius: 0.25em;
+    outline-color: #055252;*/
+  }
+
+  a:hover {
+    outline-color: transparent;
+    color: #055252;
+    text-decoration: underline;
+  }
+
+  a:active {
+    outline-color: transparent;
+    font-weight: normal;
+  }
+
+}
+
+@media only screen and (max-width: 37.5em) {
+  /* Styles for small screens (e.g., mobile devices) */
+}
+
+@media only screen and (min-width: 37.5625em) and (max-width: 1020.25em) {
+  /* Styles for medium-sized screens (e.g., tablets) */
+}
+
+@media only screen and (min-width: 1020.3125em) {
+  /* Styles for large screens (e.g., desktops) */
+}
