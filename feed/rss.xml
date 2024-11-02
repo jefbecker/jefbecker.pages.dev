@@ -9,7 +9,7 @@
 <generator>VSCodium</generator>
 <managingEditor>rkz21bg4@duck.com (jefbecker)</managingEditor>
 <webMaster>rkz21bg4@duck.com (jefbecker)</webMaster>
-<atom:link href="https://jefbecker.com/feed/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="/feed/rss.xml" rel="self" type="application/rss+xml"/>
 <!--==================================================== -->
 <item>
 <link>https://jefbecker.com/pages/blog/20230625-this-website-is-perfect.html</link>
@@ -25,7 +25,7 @@
     <p>But back to the spam, the proposals I received were somewhat absurd, not because they were clearly scams, but for pointing out supposed flaws on this website and offering "better things," a new design, and so on.</p>
     <p>I was already preparing to channel my inner <a href="https://en.wikipedia.org/wiki/James_Veitch_(comedian)">James Veitch</a> and respond in the most creative ways that I can only think of when I'm unable to write them down. But I thought twice and gave up. It's not worth it and would be too much work. Maybe when I have more time.</p>
     <h2>This Website is Already Perfect</h2>
-    <p>I thought a bit about this, whether this was really the website format I would like to have. But everything indicates that yes, at least for now. This website is perfect as it is: simple, responsive, lightweight, and because of that, it has even scored some points in accessibility. <a href="https://jefbecker.com/feed/rss.xml">It even has RSS!</a> There are plenty of big sites that don't even bother with that...</p>
+    <p>I thought a bit about this, whether this was really the website format I would like to have. But everything indicates that yes, at least for now. This website is perfect as it is: simple, responsive, lightweight, and because of that, it has even scored some points in accessibility. <a href="/feed/rss.xml">It even has RSS!</a> There are plenty of big sites that don't even bother with that...</p>
   </article>
 ]]>
 </description>
