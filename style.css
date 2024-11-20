@@ -213,6 +213,7 @@ footer {
     padding: 1em;
     overflow: auto;
     border-radius: 0.25em;
+    margin-inline: 10em;
     background-color: #333;
   }
 
@@ -368,6 +369,7 @@ footer {
     padding: 1em;
     overflow: auto;
     border-radius: 0.25em;
+    margin-inline: 10em;
     background-color: #e5e5e5;
   }
 
@@ -467,13 +469,18 @@ footer {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .card {
+    margin-inline: 0em;
+  }
   /* Styles for small screens (e.g., mobile devices) */
 }
 
 @media only screen and (min-width: 37.5625em) and (max-width: 1020.25em) {
+ 
   /* Styles for medium-sized screens (e.g., tablets) */
 }
 
 @media only screen and (min-width: 1020.3125em) {
+
   /* Styles for large screens (e.g., desktops) */
 }
