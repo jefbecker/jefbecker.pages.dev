@@ -468,7 +468,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 45em) {
   .card {
     margin-inline: 0em;
   }
