@@ -44,7 +44,7 @@ let user = "jefbecker", url = "https://lastfm-last-played.biancarosa.com.br/" + 
 
 // Since //
 
-document.getElementById("date").innerHTML = "<strong>2021 - 2024</strong>";
+document.getElementById("date").innerHTML = "<strong>2021 - 2025</strong>";
 
 // Status - Latest status from status.cafe https://status.cafe //
 
