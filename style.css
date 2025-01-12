@@ -12,6 +12,13 @@
   transform: translateY(0%);
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -30vh;
+  visibility: hidden;
+}
+
 body {
   margin: 0.625em auto;
   max-width: 50em;
@@ -100,8 +107,6 @@ form {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 figure {
@@ -174,8 +179,9 @@ footer {
   }
 
   button {
+    color: #222;
     background-color: #e5e5e5;
-    color: #333;
+    border-color: #545454 #000 #000 #545454;
   }
 
   summary {
@@ -380,8 +386,9 @@ footer {
   }
 
   button {
-    background-color: #333;
-    color: #e5e5e5;
+    color: #222;
+    background-color: #e5e5e5;
+    border-color: #545454 #000 #000 #545454;
   }
 
   .active {
@@ -472,11 +479,12 @@ footer {
   .card {
     margin-inline: 0em;
   }
+
   /* Styles for small screens (e.g., mobile devices) */
 }
 
 @media only screen and (min-width: 37.5625em) and (max-width: 1020.25em) {
- 
+
   /* Styles for medium-sized screens (e.g., tablets) */
 }
 
