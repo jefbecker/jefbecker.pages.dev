@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Resources for jefbecker.com">
   <meta name="fediverse:creator" content="@jefbecker@mastodon.social">
+  <meta name="robots" content="noindex, nofollow">
   <meta property="og:image" content="https://jefbecker.com/images/cards/resources.webp">
   <meta property="article:published_time" content="2024-06-16T00:00+00:00">
   <link rel="canonical" href="https://jefbecker.com/pages/resources/">
@@ -30,18 +31,125 @@
     </nav>
   </header>
 
+  <div class="lang">
   <span class="btn"><a title="Switch to English" class="active" href="/pages/resources/">English</a></span>
   <span class="btn"><a title="Mudar para Português" href="/br/paginas/recursos/">Português</a></span>
+  </div>
 
   <main id="main">
     <div class="title">
-      <h1 id="titulo" style="text-align: center;">Resources<br><code><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code></h1>
+      <h1 id="titulo" style="text-align: center;">Resources<!-- <br><code><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code> --></h1>
     </div>
     <article>
       <figure>
         <img src="/images/cards/resources.webp" aria-hidden="true" style="border-radius: 4px ;" width="1000" height="500" class="center" alt="Codes on tilt shift lens.">
         <figcaption style="font-size:small">Credits: <a href="https://www.pexels.com/photo/codes-on-tilt-shift-lens-2004161/">Markus Spiske (Pexels)</a></figcaption>
       </figure>
+      <h2>Website Information</h2>
+      <h3>Files by Type</h3>
+      <code>.css: 8</code>&ensp;
+      <code>.gif: 10</code>&ensp;
+      <code>.html: 44</code>&ensp;
+      <code>.jpg: 1</code>&ensp;
+      <code>.js: 19</code>&ensp;
+      <code>.md: 12</code>&ensp;
+      <code>.png: 132</code>&ensp;
+      <code>.svg: 3</code>&ensp;
+      <code>.txt: 4</code>&ensp;
+      <code>.webp: 28</code>&ensp;
+      <code>.xcf: 1</code>&ensp;
+      <code>.xml: 6</code>&ensp;
+      <br>
+      <blockquote>Total: 268 files, 44 directories. Space on disk: 19.79mb.</blockquote>
+      <!-- PowerShell to count files: Get-ChildItem -Recurse | Group-Object Extension -NoElement -->
+      <!-- PowerShell to count files with specific types: Get-ChildItem -Recurse -Include *.jpg, *.png, *.tif, *.doc, *.docx, *[file] | Group-Object Extension -NoElement -->
+      <h3>Programming Languages Used</h3>
+      <code>HTML (54.1%)</code>&ensp;
+      <code>JavaScript (35.9%)</code>&ensp;
+      <code>CSS (10.0%)</code>&ensp;
+      <h3>Available Languages</h3>
+      <code>English</code>&ensp;
+      <code>Brazilian Portuguese</code>&ensp;
+      <h3>Certifications</h3>
+      <a href="https://yellowlab.tools/result/h3lybmyj1e"><img src="/images/buttons/valid-any.png" title="Usable in any browser" alt="Certifies that the website can be viewed ins any browser"></a>&ensp;
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjefbecker.com%2F"><img src="/images/buttons/valid-html5.png" title="Valid HTML5 (W3C)" alt="Certifies that the HTML was validated by W3C"></a>&ensp;
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjefbecker.com%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="/images/buttons/valid-css.png" title="Valid CSS (W3C)" alt="Certifies that the CSS was validated by W3C"></a>&ensp;
+      <a href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fjefbecker.com%2Ffeed%2Frss.xml"><img src="/images/buttons/valid-rss.png" title="Valid RSS (W3C)" alt="Certifies that the RSS was validated without errors"></a>&ensp;
+      <a href="http://archiveready.com/check?url=http://jefbecker.com/"><img src="/images/buttons/archive-ready.png" title="Arquivability test" alt="Certifies that the website can be archived"></a>&ensp;
+      <a href="https://wave.webaim.org/report#/https://jefbecker.com"><img src="/images/buttons/wave.png" title="Accessibility test" alt="Certifies that the website does not have accessibility errors"></a>&ensp;
+      <h3>Performance</h3>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <canvas id="myChart" style="width:100%"></canvas>
+      <script>
+        const xValues = ["Performance", "Accessibility", "Best Practices", "SEO",];
+        const yValues = [100, 100, 100, 100, 0];
+        const barColors = ["#055252", "#055252", "#055252", "#055252", "#055252"];
+
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: "Google PageSpeed Insights Performance Test"
+            }
+          }
+        });
+      </script>
+      <p style="font-size:small">Chart: <a href="https://www.w3schools.com/js/js_graphics_chartjs.asp" style="font-size:small">W3 Schools.</a>&ensp;Test: <a href="https://pagespeed.web.dev/analysis/https-jefbecker-com/v8qb448s8o?form_factor=mobile" style="font-size:small">Google PageSpeed Insights.</a></p>
+      <h3>Repositories</h3>
+      <ul>
+        <li><a href="https://github.com/jefbecker/jefbecker.com">Neocities</a></li>
+        <li><a href="https://github.com/jefbecker/jefbecker.github.io">GitHub Pages</a></li>
+        <li><a href="https://github.com/jefbecker/jefbecker.pages.dev">CloudFlare Pages</a></li>
+        <li><a href="https://github.com/jefbecker/jefbecker.nekoweb.org">Nekoweb</a></li>
+      </ul>
+      <h2>Tools Used</h2>
+      <ul>
+        <li><a href="https://vscodium.com">VSCodium</a></li>
+      </ul>
+      Extensions:
+      <code><a href="https://open-vsx.org/extension/DavidAnson/vscode-markdownlint">markdownlint</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/DotJoshJohnson/xml">XML Tools</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/GitHub/vscode-pull-request-github">GitHub Pull Requests</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/Tyriar/sort-lines">Sort lines</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/Zignd/html-css-class-completion">IntelliSense for CSS class names in HTML</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/ecmel/vscode-html-css">HTML CSS Support</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/ms-vscode/live-server">Live Preview</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker">Code Spell Checker</a></code>&ensp;
+      <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker-portuguese-brazilian">Brazilian Portuguese - Code Spell Checker</a></code>&ensp;
+      <ul>
+        <li><a href="https://deploy-to-neocities.neocities.org">Deploy to Neocities</a></li>
+        <li><a href="https://www.gimp.org">GIMP</a></li>
+      </ul>
+      <h2>88x31 Buttons</h2>
+      <img src="/images/buttons/jefbecker/button_avatar_black.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_blue.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_cian.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_green.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_orange.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_pink.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_purple.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_red.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_white.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_avatar_yellow.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_black.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_blue.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_cian.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_green.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_orange.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_pink.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_purple.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_red.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_white.png" aria-hidden="true">&ensp;
+      <img src="/images/buttons/jefbecker/button_cube_yellow.png" aria-hidden="true">&ensp;
     </article>
   </main>
 
