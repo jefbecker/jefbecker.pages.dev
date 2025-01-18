@@ -8,8 +8,8 @@
   <meta name="description" content="Site pessoal de jefbecker">
   <meta name="fediverse:creator" content="@jefbecker@mastodon.social">
   <meta property="og:image" content="https://jefbecker.com/thumb.png">
-  <meta property="article:published_time" content="2021-07-30T00:00+00:00">
-  <meta property="article:modified_time" content="2024-12-31T14:04+00:00">
+  <meta property="article:published_time" content="2021-07-30T00:00-03:00">
+  <meta property="article:modified_time" content="2025-01-18T14:30-03:00">
   <link rel="canonical" href="https://jefbecker.com/br/">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="alternate" type="application/atom+xml" title="en-US Feed" href="https://jefbecker.com/feed/rss.xml">
@@ -23,7 +23,7 @@
   <header>
     <a href="/br/" style="display: inline-block;"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" style="width: 3.75em;"></a>
     <nav class="btn">
-      <a title="Ir para o Início" class="active" href="/br/">Início</a>
+      <a title="Ir para o Início" class="active current" href="/br/">Início</a>
       <a title="Ir para Páginas" href="/br/paginas/">Páginas</a>
       <a title="Ir para Arquivo" href="/br/arquivo/">Arquivo</a>
       <a title="Ir para Links" href="/br/links/">Links</a>
@@ -31,8 +31,10 @@
     </nav>
   </header>
 
-  <span class="btn"><a title="Switch to English" href="/">English</a></span>
-  <span class="btn"><a title="Mudar para Português" class="active" href="/br/">Português</a></span>
+  <div class="language">
+    <span class="btn"><a title="Switch to English" href="/">English</a></span>
+    <span class="btn"><a title="Mudar para Português" class="active current" href="/br/">Português</a></span>
+  </div>
 
   <main id="main">
     <div id="bem-vindo" class="title">
@@ -40,55 +42,64 @@
       <hr>
     </div>
     <article>
-      <h2 id="ultimas-atualizacoes" style="text-align: center;"><span class="emoji" aria-hidden="true">📢</span> Últimas Atualizações</h2>
-      <P><strong><span class="emoji" aria-hidden="true">📌</span> Livro de Visitas</strong> - O <a href="/br/paginas/livro-de-visitas/">Livro de Visitas</a> foi adicionado. Deixe uma mensagem!</P>
-      <P><strong><span class="emoji" aria-hidden="true">🌟</span> Atualizações do last.fm, status.cafe e acessibilidade</strong> - Adicionei dois cards que mostram a última música que tocou no meu last.fm e a última publicação no status.cafe. Também estou trabalhando com a acessibilidade do site; o meu objetivo é alcançar o <a href="https://www.w3.org/TR/WCAG20/#a" title="Diretrizes de Acessibilidade para Conteúdo da Web (WCAG) versão 2.0, nível AA">Web Content Accessibility Guidelines (WCAG), Version 2.0, Level AA.</a></P>
-      <P><strong><span class="emoji" aria-hidden="true">🌟</span> Terminando de arrumar a casa</strong> - Todas as páginas foram traduzidas (espero não ter esquecido nenhuma). Fiz as pazes com o Javascript, não fazia sentido fugir dele. Tratei de arrumar algumas pontas soltas e dei uma geral nas páginas em construção, no markup e nos feeds RSS - dê uma olhada neles, basta selecionar o idioma preferido e clicar em 'RSS.' Também removi o badge do Website Carbon porque não estava funcionando. Agora é que esse site vai começar de verdade, tem muita coisa legal (ou inútil) vindo aí...</P>
-      <P><strong><span class="emoji" aria-hidden="true">🌟</span> Tradução e melhorias no JavaScript</strong> - A tradução da Página Inicial está pronta, mas ainda faltam nove páginas. Agora é possível trocar de idioma entre Português (BR) e Inglês. Os botões são muito dependentes de scripts, então fiz uma gambiarra para permitir a navegação quando o JavaScript está desativado;</P>
-      <P><strong><span class="emoji" aria-hidden="true">🌟</span> JavaScript</strong> - Adicionei 3 scripts interessantes: um contador de views e um que mostra a data da última atualização do site, tudo utilizando a API do próprio Neocities. (Encontrei no <a href="https://dannarchy.com/tut/tut_002">dannarchy.com</a>). O outro serve para mostrar uma imagem customizada no perfil do Neocities. (Esse encontrei no <a href="https://arandomsite.neocities.org/snippets/#custom-neocities-thumbnail">arandomsite.neocities.org</a>);</P>
-      <details>
-        <summary>Mostrar mais...</summary>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Mais Ajustes</strong> - Eu arrumei os botões da minha barra de navegação agora eles se comportam como botões;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Ajustes</strong> - Impedi que os emojis sejam visualizados por APIs de acessibilidade. Emojis são apenas "perfumaria" e estavam causando problemas em leitores de tela;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Emojis</strong> - Vou testar se emojis deixam o visual menos chato, mas não tenho certeza se vai dar certo porque já vi que alguns leitores de tela quebraram;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Cantos arredondados</strong> - Ajustei os blocos de destaque para que eles tenha cantos arredondados. Parece legal;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Modo escuro</strong> - Modo escuro aplicado com sucesso! Agora está finalmente funcionando;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Navegação por botões</strong> - Agora a barra de navegação agora possui botões ao invés de links;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Navegação e Rodapé</strong> - Alterei alguns links da barra de navegação e no rodapé. Links adicionais agora só estarão disponíveis na <a href="/br/paginas/sobre/" title="página Sobre">página Sobre</a>. Agora é possível navegar entre as postagens graças a um menu no final das páginas;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Página "Agora" (now page)</strong> - Essa ideia foi totalmente descartada. A Home do Site será o local onde posto coisas;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Página "Hospedado no Neocities"</strong> - Essa página se tornou apenas "<a href="/br/paginas/neocities/">Neocities</a>" e agora faz parte do menu de navegação;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Página de listas</strong> - A <a href="/br/paginas/listas/">página de Listas</a> foi concluída;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Robots.txt e AI.txt</strong> - Foram adicionados dois arquivos de texto para <em>tentar</em> impedir os crawlers. Também adicionei um sitemap básico;</P>
-        <P><strong><span class="emoji" aria-hidden="true">⭐</span> Performance and fixes</strong> - Foram feitas várias correções nos HTML/CSS do Site para melhorar a performance e a coerência do código. Agora os navegadores com modo leitura conseguem identificar os elementos corretamente e exibir a opção de leitura em praticamente todas as páginas. Também estou testando usar alguns métodos para que a Home não utilize o cache com tanta frequência e sempre exiba o conteúdo atualizado.</P>
-        <hr>
-      </details>
-      <br>
-      <div id="last.fm" class="card">
+      <figure>
+        <img src="/images/buttons/jefbecker/card_cube_cian.webp" aria-hidden="true" style="border-radius: 0.25em;" width="1000" height="500" class="center" alt="">
+      </figure>
+      <h1 style="text-align: center;"><code><span class="emoji" aria-hidden="true">🚧 </span>Em Construção<span class="emoji" aria-hidden="true"> 🚧</span></code></h1>
+      <div id="status.cafe">
+        <h2 style="margin-bottom: -0.4em;">status.cafe</h2>
+        <p><span class="emoji" aria-hidden="true" id="statusCafe-emoji"></span>&ensp;<span id="statusCafe-status">Nenhuma atualização recente </span></p>
+        <p style="margin-bottom: 0em; margin-top: -1em; float: left;"><small><span id="statusCafe-time"></span></small></p><br>
+        <p style="margin-bottom: 0em; margin-top: -1em; float: left;"><small><code><a title="Ir para status.cafe" href="https://status.cafe/users/jefbecker">status.cafe</a></code>&ensp;<code><a title="Abrir o Feed RSS" href="https://status.cafe/users/jefbecker.atom">Feed RSS</a></code></small></p>
+      </div>
+      <!--<div id="last.fm" class="card">
         <h3 style="margin-bottom: 0em; margin-top: 0em;">Última música tocada no last.fm</h3>
         <p><span class="emoji" aria-hidden="true">🎧</span>&ensp;<a title="Ir para a Biblioteca do Last.fm" href="https://www.last.fm/user/jefbecker/library"><span id="lfmSong"></span></a></p>
         <hr style="margin-bottom: 0.5em; margin-top: 0em;">
         <p style="margin-bottom: 0em; margin-top: 0em; float: left;"><small><span id="lfmTime"><span class="emoji" aria-hidden="true">🔊</span> Ouvindo agora</span></small></p>
         <p style="margin-bottom: 0em; margin-top: 0em; float: right;"><small>Powered by <a title="Last.fm last-played powered by @biancarosa" href="https://github.com/biancarosa/lastfm-last-played">@biancarosa</a></small></p>
+      </div>-->
+
+      <div id="last.fm">
+        <h2 style="margin-bottom: -0.4em;">Last.fm</h2>
+        <p id="lastfm_br">Carregando músicas recentes...</p>
+        <p style="margin-bottom: 0em; margin-top: -1em; float: inline-size: none;"><small><code><a title="Ir para Last.fm" href="https://www.last.fm/user/jefbecker">Last.fm</span></a></code>&ensp;<code><a title="Displaying scrobbles and last played on your site" href="https://support.last.fm/t/last-fm-wordpress-plugin-displaying-scrobbles-and-last-played-on-your-site/57425/6">Script</a></code></small></p>
       </div>
       <br>
-      <div id="status.cafe" class="card">
-        <h3 style="margin-bottom: 0em; margin-top: 0em;">Última atualização no status.cafe</h3>
-        <p><span class="emoji" aria-hidden="true" id="statusCafe-emoji"></span>&ensp;<span id="statusCafe-status">Sem atualizações recentes</span>
-        </p>
-        <hr style="margin-bottom: 0.5em; margin-top: 0em;">
-        <p style="margin-bottom: 0em; margin-top: 0em; float: left;"><small><span id="statusCafe-time"></span></small></p>
-        <p style="margin-bottom: 0em; margin-top: 0em; float: right;"><small><a title="Abrir página do status.cafe" href="https://status.cafe/users/jefbecker">status.cafe</a></small></p>
-      </div>
-      <h2 id="proximas-atualizacoes" style="text-align: center;"><span class="emoji" aria-hidden="true">📝</span> Próximas Atualizações</h2>
-      <P><strong><span class="emoji" aria-hidden="true">★</span> Página "Neocities"</strong> - Vou fazer uma página especifica sobre o Neocities;</P>
-      <P><strong><span class="emoji" aria-hidden="true">★</span> Caixa de comentários</strong> - Estou pensando em adicionar uma caixa de comentários ou talvez um livro de visitas.</P>
-      <P><strong><span class="emoji" aria-hidden="true">★</span> Página de contato</strong> - Ajustar as informações e incrementar um pouco;</P>
-      <hr>
+      <details>
+        <summary>Mostrar mais...</summary>
+        <h2 id="ultimas-atualizacoes" style="text-align: center;"><span class="emoji" aria-hidden="true">📢</span> Últimas Atualizações</h2>
+        <p><strong><span class="emoji" aria-hidden="true">📌</span> Livro de Visitas</strong> - O <a href="/br/paginas/livro-de-visitas/">Livro de Visitas</a> foi adicionado. Deixe uma mensagem!</p>
+        <p><strong><span class="emoji" aria-hidden="true">🌟</span> Atualizações do last.fm, status.cafe e acessibilidade</strong> - Adicionei dois cards que mostram a última música que tocou no meu last.fm e a última publicação no status.cafe. Também estou trabalhando com a acessibilidade do site; o meu objetivo é alcançar o <a href="https://www.w3.org/TR/WCAG20/#a" title="Diretrizes de Acessibilidade para Conteúdo da Web (WCAG) versão 2.0, nível AA">Web Content Accessibility Guidelines (WCAG), Version 2.0, Level AA.</a></p>
+        <p><strong><span class="emoji" aria-hidden="true">🌟</span> Terminando de arrumar a casa</strong> - Todas as páginas foram traduzidas (espero não ter esquecido nenhuma). Fiz as pazes com o Javascript, não fazia sentido fugir dele. Tratei de arrumar algumas pontas soltas e dei uma geral nas páginas em construção, no markup e nos feeds RSS - dê uma olhada neles, basta selecionar o idioma preferido e clicar em 'RSS.' Também removi o badge do Website Carbon porque não estava funcionando. Agora é que esse site vai começar de verdade, tem muita coisa legal (ou inútil) vindo aí...</p>
+        <p><strong><span class="emoji" aria-hidden="true">🌟</span> Tradução e melhorias no JavaScript</strong> - A tradução da Página Inicial está pronta, mas ainda faltam nove páginas. Agora é possível trocar de idioma entre Português (BR) e Inglês. Os botões são muito dependentes de scripts, então fiz uma gambiarra para permitir a navegação quando o JavaScript está desativado;</p>
+        <p><strong><span class="emoji" aria-hidden="true">🌟</span> JavaScript</strong> - Adicionei 3 scripts interessantes: um contador de views e um que mostra a data da última atualização do site, tudo utilizando a API do próprio Neocities. (Encontrei no <a href="https://dannarchy.com/tut/tut_002">dannarchy.com</a>). O outro serve para mostrar uma imagem customizada no perfil do Neocities. (Esse encontrei no <a href="https://arandomsite.neocities.org/snippets/#custom-neocities-thumbnail">arandomsite.neocities.org</a>);</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Mais Ajustes</strong> - Eu arrumei os botões da minha barra de navegação agora eles se comportam como botões;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Ajustes</strong> - Impedi que os emojis sejam visualizados por APIs de acessibilidade. Emojis são apenas "perfumaria" e estavam causando problemas em leitores de tela;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Emojis</strong> - Vou testar se emojis deixam o visual menos chato, mas não tenho certeza se vai dar certo porque já vi que alguns leitores de tela quebraram;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Cantos arredondados</strong> - Ajustei os blocos de destaque para que eles tenha cantos arredondados. Parece legal;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Modo escuro</strong> - Modo escuro aplicado com sucesso! Agora está finalmente funcionando;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Navegação por botões</strong> - Agora a barra de navegação agora possui botões ao invés de links;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Navegação e Rodapé</strong> - Alterei alguns links da barra de navegação e no rodapé. Links adicionais agora só estarão disponíveis na <a href="/br/paginas/sobre/" title="página Sobre">página Sobre</a>. Agora é possível navegar entre as postagens graças a um menu no final das páginas;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Página "Agora" (now page)</strong> - Essa ideia foi totalmente descartada. A Home do Site será o local onde posto coisas;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Página "Hospedado no Neocities"</strong> - Essa página se tornou apenas "<a href="/br/paginas/neocities/">Neocities</a>" e agora faz parte do menu de navegação;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Página de listas</strong> - A <a href="/br/paginas/listas/">página de Listas</a> foi concluída;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Robots.txt e AI.txt</strong> - Foram adicionados dois arquivos de texto para <em>tentar</em> impedir os crawlers. Também adicionei um sitemap básico;</p>
+        <p><strong><span class="emoji" aria-hidden="true">⭐</span> Performance and fixes</strong> - Foram feitas várias correções nos HTML/CSS do Site para melhorar a performance e a coerência do código. Agora os navegadores com modo leitura conseguem identificar os elementos corretamente e exibir a opção de leitura em praticamente todas as páginas. Também estou testando usar alguns métodos para que a Home não utilize o cache com tanta frequência e sempre exiba o conteúdo atualizado.</p>
+        <hr>
+        <h2 id="proximas-atualizacoes" style="text-align: center;"><span class="emoji" aria-hidden="true">📝</span> Próximas Atualizações</h2>
+        <p><strong><span class="emoji" aria-hidden="true">★</span> Página "Neocities"</strong> - Vou fazer uma página especifica sobre o Neocities;</p>
+        <p><strong><span class="emoji" aria-hidden="true">★</span> Caixa de comentários</strong> - Estou pensando em adicionar uma caixa de comentários ou talvez um livro de visitas.</p>
+        <p><strong><span class="emoji" aria-hidden="true">★</span> Página de contato</strong> - Ajustar as informações e incrementar um pouco;</p>
+        <hr>
+
+      </details>
       <h2 id="ultimas-publicaçoes" style="text-align: center;"><span class="emoji" aria-hidden="true">📑</span> Últimas Publicações</h2>
-      <P><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/listas/">11/11/2023 | Listas</a></P>
-      <P><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/blog/20230625-este-site-e-perfeito.html">25/06/2023 | Este Site é Perfeito</a></P>
-      <P><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/sobre/">10/06/2023 | Sobre Este Projeto</a></P>
-      <P><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/privacidade/">04/06/2023 | Política de Privacidade</a></P>
+      <p><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/listas/">11/11/2023 | Listas</a></p>
+      <p><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/blog/20230625-este-site-e-perfeito.html">25/06/2023 | Este Site é Perfeito</a></p>
+      <p><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/sobre/">10/06/2023 | Sobre Este Projeto</a></p>
+      <p><span class="emoji" aria-hidden="true">✔️</span> <a href="/br/paginas/privacidade/">04/06/2023 | Política de Privacidade</a></p>
+
     </article>
   </main>
 
@@ -106,7 +117,8 @@
     <p>Última atualização: <span id="lastupdate_br"></span>.</p>
     <p>Visitantes: <span id="hitcount_br"></span>.</p>
     <noscript>
-      <p><a href="/br/paginas/recursos/#javascript" title="JavaScript Desabilitado">JavaScript Desabilitado</a></p>
+      <hr>
+      <p><span class="emoji" aria-hidden="true">⚠️ </span>Você está navegando com JavaScript desabilitado. Eu fiz o possível para que as funções básicas e de navegação do site não dependam de JavaScript para funcionar, mas elementos interativos como botões de acionamento, formulários e conteúdo remoto ainda precisam dessa função.</p>
     </noscript>
   </footer>
   <script src="/scripts/javascript_br.js" defer></script>

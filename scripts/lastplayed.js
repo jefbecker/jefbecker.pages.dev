@@ -1,4 +1,88 @@
-let user="jefbecker",url="https://lastfm-last-played.biancarosa.com.br/"+user+"/latest-song",song=document.querySelector("#lfmSong"),lastplayed=document.querySelector("#lfmTime");fetch(url).then(function(e){return e.json()}).then(function(e){song.innerHTML=e.track.name+" - "+e.track.artist["#text"],lastplayedunix=parseInt(e.track.date.uts),lastplayed.innerHTML=timeSince(lastplayedunix)});var timeSince=function(e){"object"!=typeof e&&(e=new Date(e));var t,o=Math.floor(new Date().getTime()/1e3-e),r=Math.floor(o/31536e3);return r>=1?t="year":(r=Math.floor(o/2592e3))>=1?t="month":(r=Math.floor(o/86400))>=1?t="day":(r=Math.floor(o/3600))>=1?t="hour":(r=Math.floor(o/60))>=1?t="minute":(r=o,t="second"),(r>1||0===r)&&(t+="s"),r+" "+t+" ago"};
+let user = "jefbecker";
+let url = `https://lastfm-last-played.biancarosa.com.br/${user}/latest-song`;
+let songElement = document.querySelector("#lfmSong");
+let lastPlayedElement = document.querySelector("#lfmTime");
+let albumArtElement = document.querySelector("#lfmAlbumArt"); // Add an <img> element in your HTML with this ID
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    // Extract relevant data
+    const trackName = data.track.name;
+    const artistName = data.track.artist["#text"];
+    const lastPlayedUnix = parseInt(data.track.date.uts, 10);
+
+    // Debug: Log the entire response
+    console.log("API Response:", data);
+
+    // Extract album art
+    const albumArt = data.track.image.find((img) => img.size === "extralarge");
+
+    // Update the DOM
+    songElement.innerHTML = `${trackName} - ${artistName}`;
+    lastPlayedElement.innerHTML = timeSince(lastPlayedUnix);
+
+    // Set album art
+    if (albumArt && albumArt["#text"]) {
+      const albumArtUrl = albumArt["#text"];
+      console.log("Album art URL:", albumArtUrl); // Log the album art URL for debugging
+      albumArtElement.src = albumArtUrl;
+      albumArtElement.alt = `Album art for ${trackName} by ${artistName}`;
+    } else {
+      console.error("No album art found for this song.");
+      albumArtElement.src = ""; // Clear the image if no album art is found
+      albumArtElement.alt = "No album art available.";
+    }
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+    songElement.innerHTML = "Unable to fetch song data.";
+    lastPlayedElement.innerHTML = "";
+    albumArtElement.src = ""; // Clear the album art on error
+    albumArtElement.alt = "No album art available.";
+  });
+
+// Function to calculate time since a given UNIX timestamp
+var timeSince = function (timestamp) {
+  if (typeof timestamp !== "object") {
+    timestamp = new Date(timestamp * 1000); // Convert from seconds to milliseconds
+  }
+  if (isNaN(timestamp.getTime())) return "Invalid time";
+
+  let seconds = Math.floor((new Date().getTime() - timestamp.getTime()) / 1000);
+  let interval = Math.floor(seconds / 31536000);
+  let unit = "year";
+
+  if (interval < 1) {
+    interval = Math.floor(seconds / 2592000);
+    unit = "month";
+  }
+  if (interval < 1) {
+    interval = Math.floor(seconds / 86400);
+    unit = "day";
+  }
+  if (interval < 1) {
+    interval = Math.floor(seconds / 3600);
+    unit = "hour";
+  }
+  if (interval < 1) {
+    interval = Math.floor(seconds / 60);
+    unit = "minute";
+  }
+  if (interval < 1) {
+    interval = seconds;
+    unit = "second";
+  }
+
+  if (interval !== 1) {
+    unit += "s";
+  }
+
+  return `${interval} ${unit} ago`;
+};
+
+
+
 
 // let user = 'jefbecker';
 // let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
