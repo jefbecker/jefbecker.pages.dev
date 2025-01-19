@@ -40,7 +40,7 @@ xhttp.send();
 
 // Lastplayed - Last played song in last.fm by biancarosa: https://github.com/biancarosa/lastfm-last-played //
 
-let user = "jefbecker", url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song", song = document.querySelector("#lfmSong"), lastplayed = document.querySelector("#lfmTime"); fetch(url).then(function (e) { return e.json() }).then(function (e) { song.innerHTML = e.track.name + " - " + e.track.artist["#text"], lastplayedunix = parseInt(e.track.date.uts), lastplayed.innerHTML = timeSince(lastplayedunix) }); var timeSince = function (e) { "object" != typeof e && (e = new Date(e)); var t, o = Math.floor(new Date().getTime() / 1e3 - e), r = Math.floor(o / 31536e3); return r >= 1 ? t = "year" : (r = Math.floor(o / 2592e3)) >= 1 ? t = "month" : (r = Math.floor(o / 86400)) >= 1 ? t = "day" : (r = Math.floor(o / 3600)) >= 1 ? t = "hour" : (r = Math.floor(o / 60)) >= 1 ? t = "minute" : (r = o, t = "second"), (r > 1 || 0 === r) && (t += "s"), r + " " + t + " ago" };
+// let user = "jefbecker", url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song", song = document.querySelector("#lfmSong"), lastplayed = document.querySelector("#lfmTime"); fetch(url).then(function (e) { return e.json() }).then(function (e) { song.innerHTML = e.track.name + " - " + e.track.artist["#text"], lastplayedunix = parseInt(e.track.date.uts), lastplayed.innerHTML = timeSince(lastplayedunix) }); var timeSince = function (e) { "object" != typeof e && (e = new Date(e)); var t, o = Math.floor(new Date().getTime() / 1e3 - e), r = Math.floor(o / 31536e3); return r >= 1 ? t = "year" : (r = Math.floor(o / 2592e3)) >= 1 ? t = "month" : (r = Math.floor(o / 86400)) >= 1 ? t = "day" : (r = Math.floor(o / 3600)) >= 1 ? t = "hour" : (r = Math.floor(o / 60)) >= 1 ? t = "minute" : (r = o, t = "second"), (r > 1 || 0 === r) && (t += "s"), r + " " + t + " ago" }; //
 
 // Since //
 
@@ -146,7 +146,7 @@ class LastFmRecentTracks {
         return this.html`
             <div style="display:flex;margin-bottom:1em">
                 <div style="flex:0 0 80px;margin-right:1em;">
-                    <img style="border-radius: 0.25em;" src="${image}">
+                    <img aria-hidden="true" style="border-radius: 0.25em;" src="${image}">
                 </div>
                 <div>
                     <a target="_blank" href="${track.url}">${track.name}</a><br>

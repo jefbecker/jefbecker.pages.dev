@@ -216,10 +216,9 @@ footer {
   }
 
   .card {
-    padding: 1em;
+    padding: 2em;
     overflow: auto;
     border-radius: 0.25em;
-    margin-inline: 10em;
     background-color: #333;
   }
 
@@ -476,9 +475,6 @@ footer {
 }
 
 @media only screen and (max-width: 45em) {
-  .card {
-    margin-inline: 0em;
-  }
 
   /* Styles for small screens (e.g., mobile devices) */
 }
