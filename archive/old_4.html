@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>jefbecker | Old 4.0</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="jefbecker's personal website">
+  <meta property="og:image" content="https://jefbecker.com/thumb.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="en-US Feed">
+  <link href="/feed_pt.xml" rel="alternate" type="application/rss+xml" title="pt-BR Feed">
+  <link rel="me" href="https://mastodon.social/@jefbecker">
+
+  <style>
+  
+  body {
+    margin: 10px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 10px;
+    font-family: system-ui;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .lab {
+    background-position-x: center;
+    background-repeat: repeat;
+    background-image: image-set("/images/stripe.jpg");
+    background-size: 80%;
+    color: #ffffff;
+  
+    /* Lab */
+  }
+  
+  header {
+    margin: 10px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 10px;
+    font-family: system-ui;
+    text-align: center;
+    border-radius: 4px;
+  
+    /* Header decoration 
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-image: image-set("/images/lights.png"); */
+  }
+  
+  .active {
+    background-color: #008080;
+    color: #ffffff;
+    font-weight: bold;
+  
+  }
+  
+  .title {
+    padding: 0 10px;
+  }
+  
+  article {
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+  
+  .atx {
+    line-height: 1;
+    font-family: system-ui;
+    font-size: 16px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .responsive {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  form {
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button {
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: table;
+    margin: 0 auto;
+  }
+  
+  summary {
+    border-radius: 4px;
+  
+  }
+  
+  blockquote {
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 5px solid #e5e5e5;
+  }
+  
+  code {
+    font-size: medium;
+    padding-block: 2px;
+    padding-inline: 4px;
+    border-radius: 4px;
+  }
+  
+  footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+  
+    /* Footer decoration 
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-image: image-set("/lights.png"); */
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-container>div {
+    padding: 10px;
+    font-family: system-ui;
+    text-align: center;
+  }
+  
+  
+  @media only screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: #222;
+      color: #e5e5e5;
+    }
+  
+    header {
+      background-color: #333;
+    }
+  
+    footer {
+      background-color: #333;
+    }
+  
+    code {
+      background-color: #333;
+    }
+  
+    nav {
+      color: #333;
+      color: #ffffff;
+    }
+  
+    button {
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: #e5e5e5;
+    }
+  
+    summary {
+      background-color: #333;
+      padding-block: 2px;
+      padding-inline: 4px;
+      border-radius: 4px;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+  
+    a:link {
+      color: #00d0ca;
+  
+      /* Theme: Tiffany Blue https://encycolorpedia.com/0abab5 */
+    }
+  
+    a:visited {
+      color: #008080;
+    }
+  }
+  
+  @media only screen and (prefers-color-scheme: light) {
+    header {
+      background-color: #e5e5e5;
+    }
+  
+    footer {
+      background-color: #e5e5e5;
+    }
+  
+    code {
+      background-color: #e5e5e5;
+    }
+  
+    summary {
+      background-color: #e5e5e5;
+      padding-block: 2px;
+      padding-inline: 4px;
+      border-radius: 4px;
+    }
+  
+    button {
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: #333;
+      color: #e5e5e5;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+  
+    a:link {
+      color: #00d0ca;
+    }
+  
+    a:visited {
+      color: #0a5c5c;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Styles for small screens (e.g., mobile devices) */
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for medium-sized screens (e.g., tablets) */
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Styles for large screens (e.g., desktops) */
+  }</style>
+</head>
+
+<body>
+  <header>
+    <noscript><strong><span class="emoji" aria-hidden="true">⚠️ </span>JAVASCRIPT DISABLED<span class="emoji" aria-hidden="true"> ⚠️</span><br>Buttons no longer work!</strong></noscript>
+    <h1>JEFBECKER</h1>
+    <nav>
+      <button class="active" title="Home Page" onclick="document.location='#'">Home</button>
+      <button title="Listas" onclick="document.location='#'">Lists</button>
+      <button title="Páginas" onclick="document.location='#'">Pages</button>
+      <button title="Neocities" onclick="document.location='#'">Neocities</button>
+      <button title="Sobre" onclick="document.location='#'">About</button>
+      <button title="Feed RSS" onclick="document.location='#'" style="color: #222; background-color: #ee802f;">RSS</button>
+    </nav>
+    <noscript>
+      <nav>
+        <a href="#" title="Home"><strong>Home</strong></a><span class="emoji" aria-hidden="true"> ◽</span>
+        <a href="#" title="Lists"><strong>Lists</strong></a><span class="emoji" aria-hidden="true"> ◽</span>
+        <a href="#" title="Pages"><strong>Pages</strong></a><span class="emoji" aria-hidden="true"> ◽</span>
+        <a href="#" title="Neocities"><strong>Neocities</strong></a><span class="emoji" aria-hidden="true"> ◽</span>
+        <a href="#" title="About"><strong>About</strong></a><span class="emoji" aria-hidden="true"> ◽</span>
+        <a href="#" title="RSS"><strong>RSS</strong></a>
+      </nav>
+    </noscript>
+  </header>
+
+  <button title="Mudar para Português" onclick="document.location='/#'" style="float: right;">pt-BR</button>
+  <button class="active" title="Switch to English" onclick="document.location='#'" style="float: right;">en-US</button>
+  <br>
+
+  <div class="title">
+    <h1 style="text-align: center;font-size: 17px;">Hello, welcome to my website! You are the visitor #<code style="font-family: system-ui"><span id="hitcount"></span>.</code><br>This is my personal space on the internet. Not everything is ready yet, but I will add more content in the future. In the mean time, feel free to access what is already available.<br><br><code style="font-family: system-ui">Last Updated: <span id="lastupdate"></span>.</code></h1>
+    <hr>
+  </div>
+
+  <article>
+    <h2 style="text-align: center;"><span class="emoji" aria-hidden="true">📢</span> Last Updates</h2>
+    <P><strong><span class="emoji" aria-hidden="true">📌</span> Website button</strong> - Now this website have a <a href="#" title="88x31 button">88x31 button!</a></P>
+    <P><strong><span class="emoji" aria-hidden="true">🌟</span> Translation and JavaScript improvements</strong> - The Home Page translation is done, but there are still nine pages left. Now it is possible to toggle languages between Portuguese (BR) and English. The buttons are way too dependent of scripts, so I made a fail safe to allow navigation when JavaScript is disabled;</P>
+    <P><strong><span class="emoji" aria-hidden="true">🌟</span> JavaScript</strong> - I`ve added 3 interesting scripts: a view counter and one that shows the last time the website was updated, all making use of the Neocities own API. (I found them on <a href="https://dannarchy.com/tut/tut_002" title="dannarchy.com">dannarchy.com</a>). The other one shows a custom thumbnail on my Neocities profile. (This one I found on <a href="https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail" title="arandomsite.neocities.org">arandomsite.neocities.org</a>);</P>
+    <P><strong><span class="emoji" aria-hidden="true">🌟</span> More fixes</strong> - I fixed the buttons on my navigation bar, now they behave like buttons;</P>
+
+    <details>
+      <summary>Show more...</summary>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Fixes</strong> - I prevented emojis from being viewed by accessibility APIs. Emojis are pure "decoration" and they ware causing problems with screen readers;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Emojis</strong> - I will test whether emojis make the look less boring, but I'm not sure it will work out because I already see that it broke some screen readers;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Rounded corners</strong> - I adjusted the highlight blocks so that they have rounded corners. Looks nice;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Dark mode</strong> - Dark mode successfully implemented! Now it's finally working;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Navigation by buttons</strong> - Now the navigation bar have buttons instead of links;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Navigation and footer</strong> - I altered some links from the navigation menu and footer. Additional links will now only be available in the <a href="#" title="About Page">About Page</a>. Now it is possible to navigate between posts via a menu at the end of the pages;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Page "Now"</strong> - This idea was completely dropped. The website home page is were I will post stuff;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Page "Hosted by Neocities"</strong> - This page became only "<a href="#" title="Neocities">Neocities</a>" and now it is part of the navigation menu;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Lists Page</strong> - The <a href="#" title="Lists Page">Lists Page</a> is done;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Robots.txt e AI.txt</strong> - Two text files ware added to try to prevent crawlers. Also added a basic sitemap;</P>
+      <P><strong><span class="emoji" aria-hidden="true">⭐</span> Performance and fixes</strong> - Several corrections were made to the Site's HTML/CSS to improve code performance and consistency. Now browsers with reading mode are able to identify the elements correctly and display the read option on virtually every page. I am also testing some methods so that the Home Page does not use the cache as often and always displays updated content.</P>
+      <hr>
+    </details>
+    <h2 style="text-align: center;"><span class="emoji" aria-hidden="true">📝</span> Next Updates</h2>
+    <P><strong><span class="emoji" aria-hidden="true">★</span> Finish the translation</strong> - There are still nine pages left to translate;</P>
+    <P><strong><span class="emoji" aria-hidden="true">★</span> Page "Neocities"</strong> - I will make a page specially to Neocities;</P>
+    <P><strong><span class="emoji" aria-hidden="true">★</span> Comment Box</strong> - I'm thinking about adding a comment box or maybe a guest book;</P>
+    <details>
+      <summary>Show more...</summary>
+      <P><strong><span class="emoji" aria-hidden="true">★</span> Contact Page</strong> - Adjust some information and improve a little;</P>
+      <P><strong><span class="emoji" aria-hidden="true">★</span> Page "About"</strong> - Revise some content and add more interesting things.</P>
+      <hr>
+    </details>
+    <h2 style="text-align: center;"><span class="emoji" aria-hidden="true">📑</span> Last Posts</h2>
+    <P><span class="emoji" aria-hidden="true">✔️</span> <a href="#" title="Lists">11/11/2023 | Lists</a></P>
+    <P><span class="emoji" aria-hidden="true">✔️</span> <a href="#" title="This Website is Perfect">06/25/2023 | This Website is Perfect</a></P>
+    <P><span class="emoji" aria-hidden="true">✔️</span> <a href="#" title="About This Project">06/10/2023 | About This Project</a></P>
+    <P><span class="emoji" aria-hidden="true">✔️</span> <a href="#" title="Privacy Policy">06/04/2023 | Privacy Policy</a></P>
+  </article>
+
+  <footer>
+    <a href="/#"><img src="/88x31.png" alt="88x31 button" style="width:88px; height: 31px;" class="responsive"></a><br>
+    <a href="#" title="Privacy Policy">Privacy Policy</a> |
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a>
+    <p id="date">[JavaScript disabled]</p>
+    <div id="wcb" class="carbonbadge wcb-d"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+  </footer>
+  <!-- Script - How to Change Your Neocities Thumbnail from ARandomSite: https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail -->
+  <!-- Script - Native Neocities Hit-Counter & Last Updated From Dann: https://dannarchy.com/tut/tut_002 -->
+  <script src="/script.js"></script>
+  <script>
+    if (/headless/i.test(window.navigator.userAgent)) { window.location.replace("/thumbnail/"); }
+  </script>
+</body>
+
+</html>

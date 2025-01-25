@@ -2,6 +2,51 @@
   box-sizing: border-box;
 }
 
+/* DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg */
+
+#widdget input {
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+  border: 1px solid #8d8d8d;
+  box-sizing: border-box;
+  display: block;
+  font-size: 15px;
+  height: 30px;
+  outline: none;
+  padding: 4px;
+  width: calc(100% - 41px);
+}
+
+#widdget button {
+  background-image: linear-gradient(#cacaca, #929292);
+  border-radius: 0 3px 3px 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 43px;
+}
+
+#widdget button:active {
+  background-image: linear-gradient(#909090, #585858);
+}
+
+#widdget button:focus {
+  outline: none;
+}
+
+/*html {
+  background: url(/images/buttons/jefbecker/cube_cian.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  image-rendering: optimizeSpeed;
+  filter: blur(0px);
+}*/
+
 .skip-to-main-content-link {
   padding-left: 0.625em;
   position: absolute;
@@ -20,27 +65,28 @@
 }
 
 body {
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.6;
   margin: 0.625em auto;
   max-width: 50em;
-  line-height: 1.6;
-  font-size: 1em;
   padding: 0 0.625em;
-  font-family: system-ui;
 }
 
 header {
+  border-radius: 0.25em;
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.6;
   margin: 0.625em auto;
   max-width: 50em;
-  line-height: 1.6;
-  font-size: 1em;
   padding: 0.625em;
-  font-family: system-ui;
   text-align: center;
-  border-radius: 0.25em;
 }
 
 .title {
-  padding: 0 0.625em;
+  padding: 0em 0em 0em;
+  text-align: center;
 }
 
 article {
@@ -49,8 +95,8 @@ article {
 }
 
 code {
-  font-size: medium;
   border-radius: 0.25em;
+  font-size: medium;
   padding: 0.1875em;
 }
 
@@ -70,56 +116,66 @@ ul {
 }
 
 summary {
-  padding: 0.1875em;
-  padding-left: 0.625em;
   border-radius: 0.25em;
   cursor: pointer;
 }
 
 details {
-  padding-top: 0.3125em;
-  padding-bottom: 0.3125em;
+  border-radius: 0.25em;
+  margin-bottom: 0.625em;
+  padding-block: -1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+}
+
+textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  height: 15em;
+  padding: 1em;
+  width: 100%;
 }
 
 button {
-  cursor: pointer;
   border-radius: 0.25em;
+  cursor: pointer;
 }
 
 table {
   border-collapse: collapse;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 td,
 th {
   border: 0.0625em solid #e5e5e5;
-  text-align: left;
   padding: 0.5em;
+  text-align: left;
 }
 
 form {
-  cursor: pointer;
   border-radius: 0.25em;
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 figure {
-  max-width: 100%;
-  height: auto;
   display: block;
-  margin: 0 0;
+  margin: 0 0 0;
+  max-width: 100%;
 }
 
 .atx {
-  line-height: 1;
   font-family: system-ui;
   font-size: 1em;
+  line-height: 1;
 }
 
 .responsive {
@@ -132,16 +188,16 @@ figure {
 }
 
 .flex-container>div {
-  padding: 0.625em;
   font-family: system-ui;
+  padding: 0.625em;
   text-align: center;
 }
 
 footer {
-  font-size: 1em;
-  text-align: center;
-  padding: 0.625em;
   border-radius: 0.25em;
+  font-size: 1em;
+  padding: 0.625em;
+  text-align: center;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -155,6 +211,7 @@ footer {
 
     /* Header decoration 
   background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-image: image-set("/images/lights.png"); */
   }
@@ -164,14 +221,15 @@ footer {
 
     /* Footer decoration 
   background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
-  background-image: image-set("/lights.png"); */
+  background-image: image-set("/images/lights.png"); */
   }
 
   blockquote {
+    border-left: 0.3125em solid #333;
     font-size: 0.875em;
     padding-left: 0.625em;
-    border-left: 0.3125em solid #333;
   }
 
   code {
@@ -179,11 +237,19 @@ footer {
   }
 
   button {
-    color: #222;
     background-color: #e5e5e5;
     border-color: #545454 #000 #000 #545454;
+    color: #222;
   }
 
+  button:focus {
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
+  }
+
+  details,
   summary {
     background-color: #333;
   }
@@ -191,8 +257,8 @@ footer {
   /* Float four columns side by side */
   .column {
     float: left;
-    width: 50%;
     padding: 0 0.3125em 0.625em;
+    width: 50%;
   }
 
   /* Remove extra left and right margins, due to padding */
@@ -210,16 +276,17 @@ footer {
   /* Responsive columns */
   @media screen and (max-width: 37.5em) {
     .column {
-      width: 100%;
       margin-bottom: 0.625em;
+      width: 100%;
     }
   }
 
   .card {
-    padding: 2em;
-    overflow: auto;
-    border-radius: 0.25em;
     background-color: #333;
+    border-radius: 0.25em;
+    overflow: auto;
+    padding: 2em;
+    padding-bottom: 0.5em;
   }
 
   .center {
@@ -230,40 +297,39 @@ footer {
 
   .active {
     background-color: #055252 !important;
-    font-weight: bold !important;
-    color: #ffffff !important;
     border-color: #000 #545454 #545454 #000 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
   }
 
   .btn a {
-    padding: 0 0.3125em;
-    padding-bottom: 0.1em;
-    text-align: start;
-    margin: auto;
-    cursor: pointer;
-    border: 0.125em solid #222;
-    border-radius: 0.25em;
     border-color: #545454 #000 #000 #545454;
+    border-radius: 0.25em;
+    border: 0.125em solid #222;
+    cursor: pointer;
+    margin: auto;
+    padding: 0.1em 0.15em 0.15em 0.15em;
+    text-align: start;
   }
 
   .btn a:link {
-    color: #222;
     background-color: #e5e5e5;
+    color: #222;
     text-decoration: none;
   }
 
   .btn a:visited {
-    padding: 0.0625em;
-    margin: auto;
-    color: #222;
     background-color: #e5e5e5;
-    border-radius: 0.25em;
     border-color: #545454 #000 #000 #545454;
+    border-radius: 0.25em;
+    color: #222;
+    margin: auto;
+    padding: 0.0625em;
   }
 
   .btn a:focus {
-    border: 0.125em solid #222;
     border-radius: 0.25em;
+    border: 0.125em solid #222;
     font-weight: normal;
   }
 
@@ -276,8 +342,8 @@ footer {
   }
 
   a {
-    padding: 0;
     outline-color: transparent;
+    padding: 0;
   }
 
   a:link {
@@ -291,33 +357,36 @@ footer {
   }
 
   a:focus {
-    outline-color: transparent;
-    font-weight: normal;
-    /*outline-width: 0.125em;
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
     outline-style: solid;
     border-radius: 0.25em;
-    outline-color: #26D9D6;*/
   }
 
   a:hover {
-    outline-color: transparent;
     color: #26D9D6;
+    outline-color: transparent;
     text-decoration: underline;
   }
 
   a:active {
     outline-color: transparent;
-    font-weight: normal;
   }
 
 }
 
 @media only screen and (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #222;
+  }
+
   header {
     background-color: #e5e5e5;
 
     /* Header decoration 
   background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-image: image-set("/images/lights.png"); */
   }
@@ -327,8 +396,9 @@ footer {
 
     /* Footer decoration 
   background-position-x: center;
+  background-position-y: center;
   background-repeat: no-repeat;
-  background-image: image-set("/lights.png"); */
+  background-image: image-set("/images/lights.png"); */
   }
 
   code {
@@ -339,6 +409,7 @@ footer {
     border-left: 0.3125em solid #e5e5e5;
   }
 
+  details,
   summary {
     background-color: #e5e5e5;
   }
@@ -346,8 +417,8 @@ footer {
   /* Float four columns side by side */
   .column {
     float: left;
-    width: 50%;
     padding: 0 0.3125em 0.625em;
+    width: 50%;
   }
 
   /* Remove extra left and right margins, due to padding */
@@ -357,25 +428,24 @@ footer {
 
   /* Clear floats after the columns */
   .row:after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
   }
 
   /* Responsive columns */
   @media screen and (max-width: 37.5em) {
     .column {
-      width: 100%;
       margin-bottom: 0.625em;
+      width: 100%;
     }
   }
 
   .card {
-    padding: 1em;
-    overflow: auto;
-    border-radius: 0.25em;
-    margin-inline: 10em;
     background-color: #e5e5e5;
+    border-radius: 0.25em;
+    overflow: auto;
+    padding: 2em;
   }
 
   .center {
@@ -385,47 +455,53 @@ footer {
   }
 
   button {
-    color: #222;
     background-color: #e5e5e5;
     border-color: #545454 #000 #000 #545454;
+    color: #222;
+  }
+
+  button:focus {
+    outline-color: #055252;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
   }
 
   .active {
     background-color: #055252 !important;
-    font-weight: bold !important;
-    color: #ffffff !important;
     border-color: #000 #545454 #545454 #000 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
   }
 
   .btn a {
-    padding: 0 0.3125em;
-    padding-bottom: 0.1em;
-    text-align: start;
-    margin: auto;
-    cursor: pointer;
-    border: 0.125em solid #222;
-    border-radius: 0.25em;
     border-color: #545454 #000 #000 #545454;
+    border-radius: 0.25em;
+    border: 0.125em solid #222;
+    cursor: pointer;
+    margin: auto;
+    padding: 0.1em 0.15em 0.15em 0.15em;
+    text-align: start;
   }
 
   .btn a:link {
-    color: #222;
     background-color: #e5e5e5;
+    color: #222;
     text-decoration: none;
   }
 
   .btn a:visited {
-    padding: 0.0625em;
-    margin: auto;
-    color: #222;
     background-color: #e5e5e5;
-    border-radius: 0.25em;
     border-color: #545454 #000 #000 #545454;
+    border-radius: 0.25em;
+    color: #222;
+    margin: auto;
+    padding: 0 0.2em 0.2em;
   }
 
   .btn a:focus {
-    border: 0.125em solid #222;
     border-radius: 0.25em;
+    border: 0.125em solid #222;
     font-weight: normal;
   }
 
@@ -438,8 +514,8 @@ footer {
   }
 
   a {
-    padding: 0;
     outline-color: transparent;
+    padding: 0;
   }
 
   a:link {
@@ -448,28 +524,26 @@ footer {
   }
 
   a:visited {
-    color: #000000;
-    text-decoration: underline;
-  }
-
-  a:focus {
-    outline-color: transparent;
-    font-weight: normal;
-    /*outline-width: 0.125em;
-    outline-style: solid;
-    border-radius: 0.25em;
-    outline-color: #055252;*/
-  }
-
-  a:hover {
-    outline-color: transparent;
     color: #055252;
     text-decoration: underline;
   }
 
+  a:focus {
+    outline-color: #055252;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
+  }
+
+  a:hover {
+    color: #055252;
+    outline-color: transparent;
+    text-decoration: underline;
+    
+  }
+
   a:active {
     outline-color: transparent;
-    font-weight: normal;
   }
 
 }

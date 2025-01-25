@@ -21,7 +21,7 @@
 <body>
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
-    <a href="/" style="display: inline-block;"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" style="width: 60px;"></a>
+    <a href="/"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" width="60px" height="60px"></a>
     <nav class="btn">
       <a title="Go to Home Page" href="/">Home</a>
       <a title="Go to Pages" href="/pages/">Pages</a>
@@ -31,69 +31,26 @@
     </nav>
   </header>
 
-  <main id="main">
+  <div class="language">
+    <span class="btn"><a title="Switch to English" href="/">English</a></span>
+    <span class="btn"><a title="Mudar para Português" href="/br/">Português</a></span>
+    <!--<code style="float: right;"><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code>-->
+  </div>
 
-    <div class="title">
-      <h1 id="404" style="text-align: center;"><span class="emoji" aria-hidden="true">⚠️ </span>404<span class="emoji" aria-hidden="true"> ⚠️</span></h1>
+  <main id="main">
+    <h1 id="404" style="text-align: center;"><span class="emoji" aria-hidden="true">⚠️ </span>404 - NOT FOUND<span class="emoji" aria-hidden="true"> ⚠️</span></h1>
     </div>
 
     <article>
-      <h2 id="page-not-found" style="text-align: center;">PAGE NOT FOUND</h2>
       <figure>
-        <img src="/images/cards/404.webp" aria-hidden="true" style="border-radius: 0.25em;" width="1000" height="500" class="center">
+        <img src="/images/cards/404.webp" aria-hidden="true" style="border-radius: 0.25em;" width="1000px" class="center">
       </figure>
-      <p style="text-align:center;">This page doesn't exist. <a href="/">Go back to Home Page</a> or check the Sitemap.</p>
-
-      <details>
-        <summary >Click to see the Sitemap</summary>
-        <ul id="sitemap">
-          <li><span class="caret">
-              <h2>Pages</h2>
-            </span>
-            <ul class="nested">
-              <li><a href="/pages/about/">About</a></li>
-              <li><a href="/pages/accessibility/">Accessibility</a></li>
-              <li><a href="/pages/blog/">Blog</a></li>
-              <li><a href="/pages/contact/">Contact</a></li>
-              <li><a href="/pages/donate/">Donate</a></li>
-              <li><a href="/pages/guestbook/">Guestbook</a></li>
-              <li><a href="/pages/lists/">Lists</a></li>
-              <li><a href="/pages/neocities/">Neocities</a></li>
-              <li><a href="/pages/privacy/">Privacy</a></li>
-              <li><a href="/pages/resources/">Resources</a></li>
-            </ul>
-          </li>
-          <li><span class="caret">
-              <h2>Archive</h2>
-            </span>
-            <ul class="nested">
-              <li>Books</li>
-              <li>Collections</li>
-              <li>Magazines</li>
-              <li>Radios</li>
-              <li>Shrines</li>
-              <li>Videos</li>
-              <li>Website Versions</li>
-              <li>Other</li>
-            </ul>
-          <li><span class="caret">
-              <h2>Links</h2>
-            </span>
-            <ul class="nested">
-              <li>Coming soon...</li>
-            </ul>
-          </li>
-          <li><span class="caret">
-              <h2>Feeds</h2>
-            </span>
-            <ul class="nested">
-              <li><a href="/feed/#website-feeds/">Website Feeds</a></li>
-              <li><a href="/feed/#other-feeds/">Other Feeds</a></li>
-              <li>Social Feeds</li>
-            </ul>
-          </li>
-        </ul>
-      </details>
+      <p>The page you are looking for does not exist or has not been built yet. Please use the links available at the top and bottom of the page to navigate the site. If you prefer, search for the desired term in the search box:</p>
+      <div id="widdget" style="width:100%;margin:10px 0;">
+        <form style="position:relative" method="get" action="https://duckduckgo.com/" target="_blank">
+          <div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit" title="Search on DuckDuckGo">&#128269;</button></div><input type="text" name="q" placeholder="Search on DuckDuckGo" /><input type="hidden" name="sites" value="jefbecker.com" /><input type="hidden" name="kn" value="1" />
+        </form>
+      </div>
     </article>
 
   </main>
@@ -106,7 +63,7 @@
     <a href="/pages/resources/" title="Resources">Resources</a>&ensp;
     <br>
     <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a></p>
-    <img src="/88x31.png" aria-hidden="true" alt="88x31 button" loading="lazy">
+    <img src="/88x31.png" aria-hidden="true" alt="88x31 button" width="88px" height="31px" loading="lazy">
     <p id="date">Since Jul 30, 2021</p>
     <noscript>
       <hr>

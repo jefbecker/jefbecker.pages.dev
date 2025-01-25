@@ -1,6 +1,6 @@
 // Headless - How to Change Your Neocities Thumbnail from ARandomSite: https://arandomsite.neocities.org/writing/#custom-neocities-thumbnail //
 
-const urlParams = new URLSearchParams(window.location.search); if (navigator.userAgent.includes('Screenjesus')) { window.location.replace("/thumbnail/"); }
+// const urlParams = new URLSearchParams(window.location.search); if (navigator.userAgent.includes('Screenjesus')) { window.location.replace("/thumbnail/"); } //
 
 // Hitcount_en - Native Neocities Hit-Counter & Last Updated From Dann: https://dannarchy.com/tut/tut_002 //
 
@@ -70,7 +70,7 @@ class LastFmRecentTracks {
         let cachedRecentTracks = null;
         try {
             cachedRecentTracks = this.loadRecentTracksFromCache();
-        } catch (err) {}
+        } catch (err) { }
 
         if (cachedRecentTracks) {
             try {
@@ -118,7 +118,7 @@ class LastFmRecentTracks {
 
     updateCache(data) {
         if (this.cacheTime > 0) {
-            const cacheItem = JSON.stringify({timestamp: this.nowTimestamp(), user: this.user, data});
+            const cacheItem = JSON.stringify({ timestamp: this.nowTimestamp(), user: this.user, data });
             window.localStorage.setItem(this.cacheKey(), cacheItem);
         }
     }
@@ -146,7 +146,7 @@ class LastFmRecentTracks {
         return this.html`
             <div style="display:flex;margin-bottom:1em">
                 <div style="flex:0 0 80px;margin-right:1em;">
-                    <img aria-hidden="true" style="border-radius: 0.25em;" src="${image}">
+                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Album cover" width="80px" height="80px" src="${image}">
                 </div>
                 <div>
                     <a target="_blank" href="${track.url}">${track.name}</a><br>
