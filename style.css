@@ -123,15 +123,13 @@ summary {
 details {
   border-radius: 0.25em;
   margin-bottom: 0.625em;
-  padding-block: -1em;
+  padding-block: 0.1em;
   padding-bottom: 0.1em;
   padding-left: 0.625em;
   padding-right: 0.625em;
 }
 
 textarea {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   border-radius: 0.25em;
   box-sizing: border-box;
   height: 15em;

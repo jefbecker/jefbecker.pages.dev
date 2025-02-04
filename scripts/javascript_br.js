@@ -70,7 +70,7 @@ class LastFmRecentTracks {
         let cachedRecentTracks = null;
         try {
             cachedRecentTracks = this.loadRecentTracksFromCache();
-        } catch (err) {}
+        } catch (err) { }
 
         if (cachedRecentTracks) {
             try {
@@ -118,7 +118,7 @@ class LastFmRecentTracks {
 
     updateCache(data) {
         if (this.cacheTime > 0) {
-            const cacheItem = JSON.stringify({timestamp: this.nowTimestamp(), user: this.user, data});
+            const cacheItem = JSON.stringify({ timestamp: this.nowTimestamp(), user: this.user, data });
             window.localStorage.setItem(this.cacheKey(), cacheItem);
         }
     }
@@ -146,7 +146,7 @@ class LastFmRecentTracks {
         return this.html`
             <div style="display:flex;margin-bottom:1em">
                 <div style="flex:0 0 80px;margin-right:1em;">
-                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Capa do álbum" src="${image}">
+                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Capa do álbum" width="80" height="80" src="${image}">
                 </div>
                 <div>
                     <a target="_blank" href="${track.url}">${track.name}</a><br>

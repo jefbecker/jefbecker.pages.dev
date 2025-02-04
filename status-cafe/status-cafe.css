@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+[href="/users/jefbecker.atom"] { display: none; }
+
+.email {
+    display: none;
+}
+
+dd.homepage {
+    display: none;
+}
+
+dt.about {
+    display: none;
+}
+
 body {
     margin: 10px auto;
     max-width: 800px;
@@ -49,7 +63,7 @@ a {
 .status-username {
     padding: 5px;
     margin-bottom: 5px;
-    
+
 }
 
 header {
@@ -97,7 +111,7 @@ dt {
     font-weight: bold;
     padding: 5px;
     border-radius: 4px;
-    
+
 }
 
 dd {
@@ -178,12 +192,12 @@ dd {
         background-color: #222;
         color: #ffffff;
     }
-    
+
     .faces {
         margin-bottom: 1em;
         max-width: 600px;
     }
-    
+
     h1,
     h2,
     h3 {
@@ -193,31 +207,31 @@ dd {
         border-radius: 4px;
         padding: 5px;
     }
-    
+
     .profile-picture {
         max-width: 100px;
         border-radius: 4px;
     }
-    
+
     .flash {
         padding: 0.5em 1em;
         color: #055252;
     }
-    
+
     .cols {
         display: grid;
     }
-    
+
     a {
         color: #26D9D6;
     }
-    
+
     .status-username {
         padding: 5px;
         margin-bottom: 5px;
-        
+
     }
-    
+
     header {
         margin: auto;
         max-width: 800px;
@@ -229,95 +243,95 @@ dd {
         background-color: #333;
         text-transform: capitalize;
     }
-    
+
     img {
         max-width: 100px;
         height: auto;
         display: block;
         margin: 0 auto;
     }
-    
+
     .status-content {
         padding: 5px;
         margin: auto;
         padding: 5px;
     }
-    
+
     .status nav {
         text-align: left;
         font-size: 16px;
         margin-left: 5px;
         padding: 5px;
     }
-    
+
     .status {
         background-color: #333;
         margin-bottom: 10px;
         border-radius: 4px;
         padding: 5px;
     }
-    
+
     dt {
         background-color: #333;
         text-align: left;
         font-weight: bold;
         padding: 5px;
         border-radius: 4px;
-        
+
     }
-    
+
     dd {
         padding-top: 10px;
         margin-left: 5px;
         text-align: left;
         margin-bottom: 1em;
     }
-    
+
     .edit-status {
         width: 100%;
         box-sizing: border-box;
         height: 100px;
     }
-    
+
     .tools {
         list-style-position: inside;
         padding-left: 0;
     }
-    
+
     @media (min-width: 650px) {
         .cols {
             grid-template-columns: 1fr 2fr;
             grid-gap: 10px;
         }
     }
-    
+
     .radio {
-    
+
         display: inline-block
     }
-    
+
     .field {
-    
+
         margin-bottom: 1rem;
         max-width: 500px;
     }
-    
+
     .field>label {
-    
+
         margin-bottom: .25rem;
     }
-    
+
     .field>* {
         display: block;
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .info {
-    
+
         margin-bottom: 1em;
     }
-    
+
     /* Emoji picker */
     /*#emoji-picker-panel input[type="radio"] {*/
     /*    display: none;*/
