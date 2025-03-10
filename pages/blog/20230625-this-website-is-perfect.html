@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="top" lang="en">
 
 <head>
   <title>This Website is Perfect | jefbecker</title>
@@ -21,7 +21,7 @@
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
    <a href="/"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" width="60" height="60"></a>
-    <nav class="btn">
+    <nav id="btn">
       <a title="Go to Home Page" href="/">Home</a>
       <a title="Go to Pages" class="active current" href="/pages/">Pages</a>
       <a title="Go to Archive" href="/archive/">Archive</a>
@@ -30,7 +30,7 @@
     </nav>
   </header>
 
-  <div class="language">
+  <div class="language" id="btn">
     <span class="btn"><a title="Switch to English" class="active current" href="/pages/blog/20230625-this-website-is-perfect.html">English</a></span>
     <span class="btn"><a title="Mudar para Português" href="/br/paginas/blog/20230625-este-site-e-perfeito.html">Português</a></span>
   </div>
@@ -50,32 +50,42 @@
       <details>
         <summary>Click to read the rules before comment.</summary>
         <ul>
-          <li>It is prohibited:
+          <li>Prohibited:
             <ul>
               <li>Hate speech;</li>
               <li>Advertisements;</li>
               <li>Spam;</li>
               <li>Harassment;</li>
+              <li>Malicious links;</li>
             </ul>
           </li>
-          <li>Do not publish personal information;</li>
-          <li>Respect others;</li>
-          <li>Do not post malicious links;</li>
-          <li>Please help maintain the organization of the page by commenting in the corresponding language. You can change the language using the buttons at the top of the page.</li>
+          <br>
+          <li>Recommended:
+            <ul>
+              <li>Do not publish personal information;</li>
+              <li>Respect others;</li>
+            </ul>
+          </li>
+          <br>
+          <li>About moderation:
+            <ul>
+              <li>Keep in mind that this is not a "free" space, and I have full control over what can or cannot be displayed. I also have the autonomy to modify any information that does not comply with the rules or even prevent your message from appearing on the page.</li>
+            </ul>
+          </li>
+          <br>
+          <li>Note: Your comment will be linked to the page URL according to the selected language. If you comment in one language, it will not appear in another and vice versa. You can switch languages using the buttons at the top of the page or even comment twice, once on each page. If you need to remove, modify, or correct something, please <a href="/pages/contact/">contact me</a>.</li>
         </ul>
-        <blockquote>
-          <p><em>Keep in mind that this is not a free space and that I have full control over what can or cannot be displayed. I also have the autonomy to alter any information that does not comply with the rules or even prevent your message from appearing on the page.</em></p>
-        </blockquote>
       </details>
       <br>
       <div id="comments-form"></div>
     </article>
   </main>
 
-  <!-- <div class="flex-container">
-    <div><a href="/lists.html">← Next</a></div>
-    <div><a href="/about.html"> Previous →</a></div>
-  </div> -->
+  <div class="flex-container">
+    <div><a style="text-decoration: none;" href="">⇦ Next</a></div><!-- = -->
+    <div><a style="text-decoration: none;" href="#top">⇧ Top</a></div><!-- = -->
+    <div><a style="text-decoration: none;" href="">Previous ⇨</a></div><!-- = -->
+  </div>
 
   <footer>
     <a href="/pages/about/" title="About">About</a>&ensp;
