@@ -22,7 +22,7 @@
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
     <a href="/"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" width="60" height="60"></a>
-    <nav id="btn">
+    <nav class="btn">
       <a title="Go to Home Page" class="active current" href="/">Home</a>
       <a title="Go to Pages" href="/pages/">Pages</a>
       <a title="Go to Archive" href="/archive/">Archive</a>
@@ -31,9 +31,9 @@
     </nav>
   </header>
 
-  <div>
-    <span class="language" id="btn"><a title="Switch to English" class="active current" href="/">English</a></span>
-    <span class="language" id="btn"><a title="Mudar para Português" href="/br/">Português</a></span>
+  <div class="btn">
+    <span><a title="Switch to English" class="active current" href="/">English</a></span>
+    <span><a title="Mudar para Português" href="/br/">Português</a></span>
     <code style="float: right;"><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code>
   </div>
 
@@ -56,7 +56,30 @@
         <p id="lastfm_en">Loading recent tracks...</p>
         <p><code style="padding: 0.5em;"><a title="Go to Last.fm" href="https://www.last.fm/user/jefbecker">Last.fm</a></code>&ensp;<code style="padding: 0.5em;"><a title="Displaying scrobbles and last played on your site" href="https://support.last.fm/t/last-fm-wordpress-plugin-displaying-scrobbles-and-last-played-on-your-site/57425/6">Script</a></code></p>
       </div>
-      <details>
+      <br>
+      <div class="card">
+        <h2 id="latest-blog-posts"><span class="emoji" aria-hidden="true">📝</span> Latest Blog Posts</h2>
+        <hr>
+        <ul style="margin-left: -1.25em;">
+          <li style="display: grid; grid-template-columns: 6em 1fr; margin-bottom: 0.5em;">
+            <time datetime="2023-06-25" title="25 Jun 2023 21:00">25 Jun 2023</time>
+            <div>
+              <a href="/pages/blog/20230625-this-website-is-perfect.html">This Website is Perfect</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 id="reading"><span class="emoji" aria-hidden="true">📚</span> Reading</h2>
+        <hr>
+        <span class="emoji" aria-hidden="true"> 🚧</span>
+      </div>
+      <div class="card">
+        <h2 id="watching"><span class="emoji" aria-hidden="true">📺</span> Watching</h2>
+        <hr>
+        <span class="emoji" aria-hidden="true"> 🚧</span>
+      </div>
+      <!-- <details>
         <summary>Show more...</summary>
         <h2 id="last-updates" style="text-align: center;"><span class="emoji" aria-hidden="true">📢</span> Last Updates</h2>
         <p><strong><span class="emoji" aria-hidden="true">📌</span> Guestbook</strong> - A <a href="/pages/guestbook/">Guestbook</a> was added. Leave a message!</p>
@@ -81,16 +104,7 @@
         <p><strong><span class="emoji" aria-hidden="true">★</span> Page "Neocities"</strong> - I will make a page specially to Neocities;</p>
         <p><strong><span class="emoji" aria-hidden="true">★</span> Comment Box</strong> - I'm thinking about adding a comment box or maybe a guest book;</p>
         <p><strong><span class="emoji" aria-hidden="true">★</span> Contact Page</strong> - Adjust some information and improve a little;</p>
-      </details>
-      <h2 id="last-posts" style="text-align: center;"><span class="emoji" aria-hidden="true">📑</span> Last Posts</h2>
-      <ul style="margin-left: -1.25em;">
-        <li style="display: grid; grid-template-columns: 6em 1fr; margin-bottom: 0.5em;">
-          <time datetime="2023-06-25" title="25 Jun 2023 21:00">25 Jun 2023</time>
-          <div>
-            <a href="/pages/blog/20230625-this-website-is-perfect.html">This Website is Perfect</a>
-          </div>
-        </li>
-      </ul>
+      </details> -->
     </article>
   </main>
 

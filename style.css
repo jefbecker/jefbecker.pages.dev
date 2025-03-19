@@ -2,11 +2,19 @@
   box-sizing: border-box;
 }
 
-#btn {
+main {
+  margin: 0em;
+}
 
+.btn {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+div {
+  margin-bottom: 0.625em;
+}
+
 /* DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg */
 
 #widdget input {
@@ -72,7 +80,7 @@
 body {
   font-family: system-ui;
   font-size: 1em;
- 
+
   margin: 0.625em auto;
   max-width: 50em;
   padding: 0 0.625em;
@@ -95,7 +103,7 @@ header {
 
 article {
   margin: 0.625em auto;
-  padding: 0 0.625em;
+  padding: 0 0 0em;
 }
 
 code {
@@ -167,7 +175,7 @@ form {
 
 img {
   max-width: 100%;
-  border-radius: 0.25em;
+
 }
 
 figure {
@@ -286,8 +294,9 @@ footer {
     background-color: #333;
     border-radius: 0.25em;
     overflow: auto;
-    padding: 2em;
-    padding-bottom: 0.5em;
+    padding: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
   }
 
   .center {
@@ -296,14 +305,14 @@ footer {
     margin-right: auto;
   }
 
-  #btn .active {
+  .btn .active {
     background-color: #055252 !important;
     border-color: #000 #545454 #545454 #000 !important;
     color: #ffffff !important;
     font-weight: bold !important;
   }
 
-  #btn a {
+  .btn a {
     border-color: #545454 #000 #000 #545454;
     border-radius: 0.25em;
     border: 0.125em solid #222;
@@ -313,13 +322,13 @@ footer {
     text-align: start;
   }
 
-  #btn a:link {
+  .btn a:link {
     background-color: #e5e5e5;
     color: #222;
     text-decoration: none;
   }
 
-  #btn a:visited {
+  .btn a:visited {
     background-color: #e5e5e5;
     border-color: #545454 #000 #000 #545454;
     border-radius: 0.25em;
@@ -328,17 +337,17 @@ footer {
     padding: 0.0625em;
   }
 
-  #btn a:focus {
+  .btn a:focus {
     border-radius: 0.25em;
     border: 0.125em solid #222;
     font-weight: normal;
   }
 
-  #btn a:hover {
+  .btn a:hover {
     border-color: #545454 #000 #000 #545454;
   }
 
-  #btn a:active {
+  .btn a:active {
     border-color: #000 #545454 #545454 #000;
   }
 
@@ -474,7 +483,7 @@ footer {
     font-weight: bold !important;
   }
 
-  #btn a {
+  .btn a {
     border-color: #545454 #000 #000 #545454;
     border-radius: 0.25em;
     border: 0.125em solid #222;
@@ -484,13 +493,13 @@ footer {
     text-align: start;
   }
 
-  #btn a:link {
+  .btn a:link {
     background-color: #e5e5e5;
     color: #222;
     text-decoration: none;
   }
 
-  #btn a:visited {
+  .btn a:visited {
     background-color: #e5e5e5;
     border-color: #545454 #000 #000 #545454;
     border-radius: 0.25em;
@@ -499,17 +508,17 @@ footer {
     padding: 0 0.2em 0.2em;
   }
 
-  #btn a:focus {
+  .btn a:focus {
     border-radius: 0.25em;
     border: 0.125em solid #222;
     font-weight: normal;
   }
 
-  #btn a:hover {
+  .btn a:hover {
     border-color: #545454 #000 #000 #545454;
   }
 
-  #btn a:active {
+  .btn a:active {
     border-color: #000 #545454 #545454 #000;
   }
 
@@ -539,7 +548,7 @@ footer {
     color: #055252;
     outline-color: transparent;
     text-decoration: underline;
-    
+
   }
 
   a:active {
