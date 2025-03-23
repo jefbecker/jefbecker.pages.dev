@@ -172,11 +172,6 @@ table {
   width: 100%;
 }
 
-a {
-  display: inline-block;
-  pointer-events: auto;
-}
-
 td,
 th {
   border: 0.0625em solid #e5e5e5;
