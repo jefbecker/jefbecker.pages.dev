@@ -4,6 +4,7 @@
 
 main {
   margin: 0em;
+  line-height: 1.5em;
 }
 
 .btn {
@@ -13,6 +14,18 @@ main {
 
 div {
   margin-bottom: 0.625em;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.card {
+  border-radius: 0.25em;
+  overflow: auto;
+  padding: 1.5em;
+  padding-bottom: 0em;
+  padding-top: 0em;
 }
 
 /* DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg */
@@ -80,7 +93,6 @@ div {
 body {
   font-family: system-ui;
   font-size: 1em;
-
   margin: 0.625em auto;
   max-width: 50em;
   padding: 0 0.625em;
@@ -110,7 +122,6 @@ code {
   border-radius: 0.25em;
   font-size: medium;
   padding: 0.1875em;
-  margin-top: 0em;
 }
 
 blockquote {
@@ -161,6 +172,11 @@ table {
   width: 100%;
 }
 
+a {
+  display: inline-block;
+  pointer-events: auto;
+}
+
 td,
 th {
   border: 0.0625em solid #e5e5e5;
@@ -175,6 +191,7 @@ form {
 
 img {
   max-width: 100%;
+  display: block;
 
 }
 
@@ -199,9 +216,32 @@ figure {
 }
 
 .flex-container>div {
-  font-family: system-ui;
   padding: 0.625em;
   text-align: center;
+}
+
+.card-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.nav-flex-container {
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin-bottom: 0em;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -292,11 +332,6 @@ footer {
 
   .card {
     background-color: #333;
-    border-radius: 0.25em;
-    overflow: auto;
-    padding: 1em;
-    padding-bottom: 1em;
-    padding-top: 0em;
   }
 
   .center {
@@ -452,9 +487,6 @@ footer {
 
   .card {
     background-color: #e5e5e5;
-    border-radius: 0.25em;
-    overflow: auto;
-    padding: 2em;
   }
 
   .center {
@@ -560,6 +592,7 @@ footer {
 @media only screen and (max-width: 45em) {
 
   /* Styles for small screens (e.g., mobile devices) */
+
 }
 
 @media only screen and (min-width: 37.5625em) and (max-width: 1020.25em) {

@@ -15,14 +15,14 @@
   <link rel="alternate" type="application/atom+xml" title="RSS Feed in English" href="https://jefbecker.com/feed/rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Feed RSS em Português do Brasil" href="https://jefbecker.com/br/feed/rss.xml">
   <link rel="me" href="https://mastodon.social/@jefbecker">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css?v=2025.03.22">
 </head>
 
 <body>
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
     <a href="/"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" width="60" height="60"></a>
-    <nav class="btn">
+    <nav class="btn nav-flex-container">
       <a title="Go to Home Page" class="active current" href="/">Home</a>
       <a title="Go to Pages" href="/pages/">Pages</a>
       <a title="Go to Archive" href="/archive/">Archive</a>
@@ -34,7 +34,6 @@
   <div class="btn">
     <span><a title="Switch to English" class="active current" href="/">English</a></span>
     <span><a title="Mudar para Português" href="/br/">Português</a></span>
-    <code style="float: right;"><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code>
   </div>
 
   <main id="main">
@@ -49,12 +48,18 @@
         <h2 id="status-cafe">status.cafe</h2>
         <p><span class="emoji" aria-hidden="true" id="statusCafe-emoji" style="padding-right: 0.5em;"></span><span id="statusCafe-status">No recent update</span></p>
         <p><small><span id="statusCafe-time"></span></small></p>
-        <p><code style="padding: 0.5em;"><a title="Go to status.cafe" href="https://status.cafe/users/jefbecker">status.cafe</a></code>&ensp;<code style="padding: 0.5em;"><a title="Open RSS Feed" href="https://status.cafe/users/jefbecker.atom">RSS Feed</a></code></p>
+        <div class="card-flex-container">
+        <code><a title="Go to status.cafe" href="https://status.cafe/users/jefbecker">status.cafe</a></code>
+        <code><a title="Open RSS Feed" href="https://status.cafe/users/jefbecker.atom">RSS Feed</a></code>
+        </div>
       </div>
       <div>
         <h2 id="last-fm">Last.fm</h2>
-        <p id="lastfm_en">Loading recent tracks...</p>
-        <p><code style="padding: 0.5em;"><a title="Go to Last.fm" href="https://www.last.fm/user/jefbecker">Last.fm</a></code>&ensp;<code style="padding: 0.5em;"><a title="Displaying scrobbles and last played on your site" href="https://support.last.fm/t/last-fm-wordpress-plugin-displaying-scrobbles-and-last-played-on-your-site/57425/6">Script</a></code></p>
+        <p style="margin-bottom: -1em;" id="lastfm_en">Loading recent tracks...</p>
+        <div class="card-flex-container">
+        <code><a title="Go to Last.fm" href="https://www.last.fm/user/jefbecker">Last.fm</a></code>
+        <code><a title="Displaying scrobbles and last played on your site" href="https://support.last.fm/t/last-fm-wordpress-plugin-displaying-scrobbles-and-last-played-on-your-site/57425/6">Script</a></code>
+        </div>
       </div>
       <br>
       <div class="card">
@@ -72,12 +77,32 @@
       <div class="card">
         <h2 id="reading"><span class="emoji" aria-hidden="true">📚</span> Reading</h2>
         <hr>
-        <span class="emoji" aria-hidden="true"> 🚧</span>
+        <div class="card-flex-container">
+          <a href="https://myanimelist.net/manga/86337" title="Black Clover" style="display: inline-block;"><img src="https://cdn.myanimelist.net/images/manga/2/166254.jpg" style="border-radius: 0.25em;pointer-events: auto;" height="100" width="70" aria-hidden="true" loading="lazy" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/122830" title="Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen Dai 2-bu - Hon no Tame nara Miko ni Naru!"><img src="https://cdn.myanimelist.net/images/manga/1/227224.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/122851" title="Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen Dai 3-bu - Ryouchi ni Hon wo Hirogeyou!"><img src="https://cdn.myanimelist.net/images/manga/2/224003.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/162479" title="Kagurabachi"><img src="https://cdn.myanimelist.net/images/manga/3/296327.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/99007" title="Komi-san wa, Comyushou desu."><img src="https://cdn.myanimelist.net/images/manga/3/188962.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/44347" title="One Punch-Man"><img src="https://cdn.myanimelist.net/images/manga/3/80661.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/manga/131334" title="Sakamoto Days"><img src="https://cdn.myanimelist.net/images/manga/1/242919.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.goodreads.com/book/show/29612782" title="O Feiticeiro de Terramar"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1470136873i/29612782.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.goodreads.com/book/show/40088882" title="Tudo o que Você Precisa Saber Sobre Economia: Um curso intensivo sobre dinheiro e finanças"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1525881155i/40088882.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.goodreads.com/book/show/29957493" title="Re:ZERO -Starting Life in Another World-, Vol. 1"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1479504260i/29957493.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <!--<a href="X" title="X" ><img src="X" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>-->
+        </div>
       </div>
       <div class="card">
         <h2 id="watching"><span class="emoji" aria-hidden="true">📺</span> Watching</h2>
         <hr>
-        <span class="emoji" aria-hidden="true"> 🚧</span>
+        <div class="card-flex-container">
+          <a href="https://myanimelist.net/anime/37522" title="Pet"><img src="https://cdn.myanimelist.net/images/anime/1399/94794l.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/anime/54857" title="Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season"><img src="https://cdn.myanimelist.net/images/anime/1317/134750l.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://myanimelist.net/anime/58572" title="Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su 2nd Season"><img src="https://cdn.myanimelist.net/images/anime/1996/147601l.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.themoviedb.org/tv/50137-rwby" title="RWBY"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/pTLBkalS00rc9FSxgdt4bcwWdvH.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.themoviedb.org/tv/4087-the-x-files" title="The X-Files"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/rcBx0p8h51LHceyhquYMxbspJQu.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <a href="https://www.themoviedb.org/tv/1716-early-edition" title="Early Edition"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eBhlNJnsoY2EsPbP67sbVhp86X6.jpg" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>
+          <!--<a href="X" title="X" ><img src="X" style="border-radius: 0.25em;" height="100" width="70" aria-hidden="true" loading="lazy" alt=""></a>-->
+        </div>
       </div>
       <!-- <details>
         <summary>Show more...</summary>
@@ -109,13 +134,15 @@
   </main>
 
   <footer>
-    <a href="/pages/about/" title="About">About</a>&ensp;
-    <a href="/pages/accessibility/" title="Accessibility">Accessibility</a>&ensp;
-    <a href="/pages/contact/" title="Contact me">Contact</a>&ensp;
-    <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>&ensp;
-    <a href="/pages/resources/" title="Resources">Resources</a>&ensp;
+    <div class="footer-flex-container">
+    <a href="/pages/about/" title="About">About</a>
+    <a href="/pages/accessibility/" title="Accessibility">Accessibility</a>
+    <a href="/pages/contact/" title="Contact me">Contact</a>
+    <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>
+    <a href="/pages/resources/" title="Resources">Resources</a>
+    </div>
     <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a></p>
-    <img src="/88x31.png" aria-hidden="true" alt="88x31 button" width="88" height="31" loading="lazy">
+    <img src="/88x31.png" class="center" aria-hidden="true" alt="88x31 button" width="88" height="31" loading="lazy">
     <p><a href="https://xandra.cc/patrons">Eris is watching</a></p>
     <p id="date">Since Jul 30, 2021</p>
     <p>Last update: <span id="lastupdate"></span>.</p>

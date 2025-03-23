@@ -15,14 +15,14 @@
   <link rel="alternate" type="application/atom+xml" title="RSS Feed in English" href="https://jefbecker.com/feed/rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Feed RSS em Português do Brasil" href="https://jefbecker.com/br/feed/rss.xml">
   <link rel="me" href="https://mastodon.social/@jefbecker">
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css?v=2025.03.22">
 </head>
 
 <body>
   <a href="#main" class="skip-to-main-content-link">Pular para o conteúdo principal</a>
   <header>
     <a href="/br/"><img src="/images/jefbecker.png" title="JEFBECKER" alt="JEFBECKER LOGO" width="60" height="60"></a>
-    <nav class="btn">
+    <nav class="btn nav-flex-container">
       <a title="Ir para o Início" href="/br/">Início</a>
       <a title="Ir para Páginas" class="active current" href="/br/paginas/">Páginas</a>
       <a title="Ir para Arquivo" href="/br/arquivo/">Arquivo</a>
@@ -45,36 +45,44 @@
       </figure>
       <h2>Informações do Site</h2>
       <h3>Arquivos por Tipo</h3>
-      <code>.css: 8</code>&ensp;
-      <code>.gif: 10</code>&ensp;
-      <code>.html: 44</code>&ensp;
-      <code>.jpg: 1</code>&ensp;
-      <code>.js: 19</code>&ensp;
-      <code>.md: 12</code>&ensp;
-      <code>.png: 132</code>&ensp;
-      <code>.svg: 3</code>&ensp;
-      <code>.txt: 4</code>&ensp;
-      <code>.webp: 28</code>&ensp;
-      <code>.xcf: 1</code>&ensp;
-      <code>.xml: 6</code>&ensp;
-      <br>
-      <blockquote>Total: 268 arquivos, 44 diretórios. Espaço em disco: 19.79mb.</blockquote>
+      <div class="card-flex-container">
+        <code>.css: 8</code>
+        <code>.gif: 34</code>
+        <code>.html: 47</code>
+        <code>.jpg: 2</code>
+        <code>.js: 20</code>
+        <code>.m3u: 3</code>
+        <code>.md: 12</code>
+        <code>.png: 185</code>
+        <code>.svg: 3</code>
+        <code>.txt: 4</code>
+        <code>.webp: 41</code>
+        <code>.xcf: 1</code>
+        <code>.xml: 6</code>
+      </div>
+      <blockquote>Total: 366 arquivos, 46 diretórios. Espaço em disco: 19.80mb.</blockquote>
       <!-- PowerShell to count files: Get-ChildItem -Recurse | Group-Object Extension -NoElement -->
       <!-- PowerShell to count files with specific types: Get-ChildItem -Recurse -Include *.jpg, *.png, *.tif, *.doc, *.docx, *[file] | Group-Object Extension -NoElement -->
       <h3>Linguagens de Programação Utilizadas</h3>
-      <code>HTML (54.1%)</code>&ensp;
-      <code>JavaScript (35.9%)</code>&ensp;
-      <code>CSS (10.0%)</code>&ensp;
+      <div class="card-flex-container">
+        <code>HTML (59.8%)</code>
+        <code>JavaScript (32.0%)</code>
+        <code>CSS (8.2%)</code>
+      </div>
       <h3>Idiomas Disponíveis</h3>
-      <code>Inglês</code>&ensp;
-      <code>Português do Brasil</code>&ensp;
+      <div class="card-flex-container">
+        <code>Inglês</code>
+        <code>Português do Brasil</code>
+      </div>
       <h3>Certificações</h3>
-      <a href="https://yellowlab.tools/result/h3lybmyj1e"><img src="/images/buttons/valid-any.png" title="Utilizável em qualquer navegador" alt="Certifica que o site pode ser visualizado em qualquer navegador"></a>
-      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjefbecker.com%2F"><img src="/images/buttons/valid-html5.png" title="HTML5 válido (W3C)" alt="Certifica que o HTML foi validado pela W3C"></a>
-      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjefbecker.com%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="/images/buttons/valid-css.png" title="CSS válido (W3C)" alt="Certifica que o CSS foi validado pela W3C"></a>
-      <a href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fjefbecker.com%2Ffeed%2Frss.xml"><img src="/images/buttons/valid-rss.png" title="RSS válido (W3C)" alt="Certifica que o RSS foi validado sem erros"></a>
-      <a href="http://archiveready.com/check?url=http://jefbecker.com/"><img src="/images/buttons/archive-ready.png" title="Teste de arquivamento do site" alt="Certifica que o site pode ser arquivado"></a>
-      <a href="https://wave.webaim.org/report#/https://jefbecker.com"><img src="/images/buttons/wave.png" title="Teste de acessibilidade do site" alt="Certifica que o site não tem erros de acessibilidade"></a>
+      <div class="card-flex-container">
+        <a href="https://yellowlab.tools/result/h3lybmyj1e"><img src="/images/buttons/valid-any.png" title="Utilizável em qualquer navegador" alt="Certifica que o site pode ser visualizado em qualquer navegador"></a>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fjefbecker.com%2F"><img src="/images/buttons/valid-html5.png" title="HTML5 válido (W3C)" alt="Certifica que o HTML foi validado pela W3C"></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjefbecker.com%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="/images/buttons/valid-css.png" title="CSS válido (W3C)" alt="Certifica que o CSS foi validado pela W3C"></a>
+        <a href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fjefbecker.com%2Ffeed%2Frss.xml"><img src="/images/buttons/valid-rss.png" title="RSS válido (W3C)" alt="Certifica que o RSS foi validado sem erros"></a>
+        <a href="http://archiveready.com/check?url=http://jefbecker.com/"><img src="/images/buttons/archive-ready.png" title="Teste de arquivamento do site" alt="Certifica que o site pode ser arquivado"></a>
+        <a href="https://wave.webaim.org/report#/https://jefbecker.com"><img src="/images/buttons/wave.png" title="Teste de acessibilidade do site" alt="Certifica que o site não tem erros de acessibilidade"></a>
+      </div>
       <h3>Desempenho</h3>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
       <canvas id="myChart" style="width:100%"></canvas>
@@ -113,53 +121,61 @@
       <ul>
         <li><a href="https://vscodium.com">VSCodium</a></li>
       </ul>
-      Extensões:
-      <code><a href="https://open-vsx.org/extension/DavidAnson/vscode-markdownlint">markdownlint</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/DotJoshJohnson/xml">XML Tools</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/GitHub/vscode-pull-request-github">GitHub Pull Requests</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/Tyriar/sort-lines">Sort lines</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/Zignd/html-css-class-completion">IntelliSense for CSS class names in HTML</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/ecmel/vscode-html-css">HTML CSS Support</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/ms-vscode/live-server">Live Preview</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker">Code Spell Checker</a></code>&ensp;
-      <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker-portuguese-brazilian">Brazilian Portuguese - Code Spell Checker</a></code>&ensp;
+      <div class="card-flex-container">
+        Extensões:
+        <code><a href="https://open-vsx.org/extension/DavidAnson/vscode-markdownlint">markdownlint</a></code>
+        <code><a href="https://open-vsx.org/extension/DotJoshJohnson/xml">XML Tools</a></code>
+        <code><a href="https://open-vsx.org/extension/GitHub/vscode-pull-request-github">GitHub Pull Requests</a></code>
+        <code><a href="https://open-vsx.org/extension/Tyriar/sort-lines">Sort lines</a></code>
+        <code><a href="https://open-vsx.org/extension/Zignd/html-css-class-completion">IntelliSense for CSS</a></code>
+        <code><a href="https://open-vsx.org/extension/ecmel/vscode-html-css">HTML CSS Support</a></code>
+        <code><a href="https://open-vsx.org/extension/ms-vscode/live-server">Live Preview</a></code>
+        <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker">Code Spell Checker</a></code>
+        <code><a href="https://open-vsx.org/extension/streetsidesoftware/code-spell-checker-portuguese-brazilian">PT-BR - Code Spell Checker</a></code>
+      </div>
       <ul>
         <li><a href="https://deploy-to-neocities.neocities.org">Deploy to Neocities</a></li>
         <li><a href="https://www.gimp.org">GIMP</a></li>
       </ul>
       <h2>Botões 88x31</h2>
-      <img src="/images/buttons/jefbecker/button_avatar_black.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_blue.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_cian.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_green.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_orange.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_pink.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_purple.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_red.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_white.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_avatar_yellow.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_black.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_blue.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_cian.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_green.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_orange.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_pink.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_purple.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_red.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_white.png" aria-hidden="true">
-      <img src="/images/buttons/jefbecker/button_cube_yellow.png" aria-hidden="true">
+      <div class="card-flex-container">
+        <img src="/images/buttons/jefbecker/button_avatar_black.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_blue.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_cian.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_green.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_orange.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_pink.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_purple.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_red.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_white.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_avatar_yellow.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_black.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_blue.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_cian.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_green.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_orange.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_pink.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_purple.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_red.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_white.png" aria-hidden="true">
+        <img src="/images/buttons/jefbecker/button_cube_yellow.png" aria-hidden="true">
+      </div>
+      <!-- Scripts -->
+      <!-- Color and themes -->
+      <!-- uptime -->
     </article>
   </main>
 
   <footer>
-    <a href="/br/paginas/acessibilidade/" title="Acessibilidade">Acessibilidade</a>&ensp;
-    <a href="/br/paginas/contato/" title="Entre em contato">Contato</a>&ensp;
-    <a href="/br/paginas/privacidade/" title="Política de Privacidade">Privacidade</a>&ensp;
-    <a href="/br/paginas/recursos/" title="Recursos">Recursos</a>&ensp;
-    <a href="/br/paginas/sobre/" title="Sobre">Sobre</a>&ensp;
-    <br>
+    <div class="footer-flex-container">
+      <a href="/br/paginas/acessibilidade/" title="Acessibilidade">Acessibilidade</a>
+      <a href="/br/paginas/contato/" title="Entre em contato">Contato</a>
+      <a href="/br/paginas/privacidade/" title="Política de Privacidade">Privacidade</a>
+      <a href="/br/paginas/recursos/" title="Recursos">Recursos</a>
+      <a href="/br/paginas/sobre/" title="Sobre">Sobre</a>
+    </div>
     <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Licença Creative Commons - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a></p>
-    <img src="/88x31.png" aria-hidden="true" alt="Botão 88x31" width="88" height="31" loading="lazy">
+    <img src="/88x31.png" class="center" aria-hidden="true" alt="Botão 88x31" width="88" height="31" loading="lazy">
     <p id="date">Desde 30 de Jul 2021</p>
     <noscript>
       <hr>
