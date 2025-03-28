@@ -30,36 +30,36 @@ div {
 
 /* DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg */
 
-#widdget input {
-  border-radius: 3px 0 0 3px;
+#widget input {
+  border-radius: 0.25em 0 0 0.25em;
   border-right: 0;
-  border: 1px solid #8d8d8d;
+  border: 1px solid #222;
   box-sizing: border-box;
   display: block;
-  font-size: 15px;
-  height: 30px;
+  font-size: 1em;
+  height: 2em;
   outline: none;
   padding: 4px;
   width: calc(100% - 41px);
 }
 
-#widdget button {
+#widget button {
   background-image: linear-gradient(#cacaca, #929292);
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.25em 0.25em 0;
   border: 0;
-  color: #fff;
+  color: #e5e5e5;
   cursor: pointer;
   float: left;
-  height: 30px;
+  height: 2.37em;
   padding: 0;
-  width: 43px;
+  width: 2.999em;
 }
 
-#widdget button:active {
+#widget button:active {
   background-image: linear-gradient(#909090, #585858);
 }
 
-#widdget button:focus {
+#widget button:focus {
   outline: none;
 }
 
@@ -286,8 +286,8 @@ footer {
     color: #222;
   }
 
-  button:focus {
-    outline-color: #26D9D6;
+  button :focus {
+    outline-color: #055252;
     outline-width: 0.25em;
     outline-style: solid;
     border-radius: 0.25em;
@@ -296,6 +296,13 @@ footer {
   details,
   summary {
     background-color: #333;
+  }
+  
+  details :focus {
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
   }
 
   /* Float four columns side by side */
@@ -335,33 +342,66 @@ footer {
     margin-right: auto;
   }
 
-  .btn .active {
-    background-color: #055252 !important;
-    border-color: #000 #545454 #545454 #000 !important;
-    color: #ffffff !important;
-    font-weight: bold !important;
+  button {
+    background-color: #e5e5e5;
+    border-color: #545454 #000 #000 #545454;
+    color: #222;
   }
 
-  .btn a {
-    border-color: #545454 #000 #000 #545454;
+  button:focus {
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
+    outline-style: solid;
     border-radius: 0.25em;
+  }
+
+  /* General anchor styles */
+  a {
+    outline-color: transparent;
+  }
+
+  a:link {
+    color: #26D9D6;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #26D9D6;
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
+  }
+
+  a:hover {
+    color: #26D9D6;
+    outline-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    outline-color: transparent;
+  }
+
+  /* Button styles */
+  .btn a {
     border: 0.125em solid #222;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
     cursor: pointer;
     margin-top: 0em;
     padding: 0.1em 0.15em 0.15em 0.15em;
     text-align: start;
-  }
-
-  .btn a:link {
     background-color: #e5e5e5;
     color: #222;
     text-decoration: none;
   }
 
   .btn a:visited {
-    background-color: #e5e5e5;
-    border-color: #545454 #000 #000 #545454;
-    border-radius: 0.25em;
     color: #222;
     margin: auto;
     padding: 0.0625em;
@@ -381,35 +421,12 @@ footer {
     border-color: #000 #545454 #545454 #000;
   }
 
-  a {
-    outline-color: transparent;
-  }
-
-  a:link {
-    color: #26D9D6;
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: #D1E6E5;
-    text-decoration: underline;
-  }
-
-  a:focus {
-    outline-color: #26D9D6;
-    outline-width: 0.25em;
-    outline-style: solid;
-    border-radius: 0.25em;
-  }
-
-  a:hover {
-    color: #26D9D6;
-    outline-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    outline-color: transparent;
+  /* Active button (higher specificity) */
+  .btn a.active {
+    background-color: #055252;
+    border-color: #000 #545454 #545454 #000;
+    color: #ffffff;
+    font-weight: bold;
   }
 
 }
@@ -451,6 +468,13 @@ footer {
   details,
   summary {
     background-color: #e5e5e5;
+  }
+
+  details :focus {
+    outline-color: #26D9D6;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
   }
 
   /* Float four columns side by side */
@@ -496,43 +520,63 @@ footer {
     color: #222;
   }
 
-  button:focus {
+  button :focus {
     outline-color: #055252;
+    outline-width: 0.25em;
+    outline-style: solid;
+    border-radius: 0.25em;
+  } 
+
+  /* General anchor styles */
+  a {
+    outline-color: transparent;
+  }
+
+  a:link {
+    color: #055252;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #055252;
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline-color: #26D9D6;
     outline-width: 0.25em;
     outline-style: solid;
     border-radius: 0.25em;
   }
 
-  .active {
-    background-color: #055252 !important;
-    border-color: #000 #545454 #545454 #000 !important;
-    color: #ffffff !important;
-    font-weight: bold !important;
+  a:hover {
+    color: #055252;
+    outline-color: transparent;
+    text-decoration: underline;
   }
 
+  a:active {
+    outline-color: transparent;
+  }
+
+  /* Button styles */
   .btn a {
-    border-color: #545454 #000 #000 #545454;
-    border-radius: 0.25em;
     border: 0.125em solid #222;
+    border-radius: 0.25em;
+    border-color: #545454 #000 #000 #545454;
     cursor: pointer;
-    margin: auto;
+    margin-top: 0em;
     padding: 0.1em 0.15em 0.15em 0.15em;
     text-align: start;
-  }
-
-  .btn a:link {
     background-color: #e5e5e5;
     color: #222;
     text-decoration: none;
   }
 
   .btn a:visited {
-    background-color: #e5e5e5;
-    border-color: #545454 #000 #000 #545454;
-    border-radius: 0.25em;
     color: #222;
     margin: auto;
-    padding: 0 0.2em 0.2em;
+    padding: 0.0625em;
   }
 
   .btn a:focus {
@@ -549,37 +593,12 @@ footer {
     border-color: #000 #545454 #545454 #000;
   }
 
-  a {
-    outline-color: transparent;
-    padding: 0;
-  }
-
-  a:link {
-    color: #055252;
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: #055252;
-    text-decoration: underline;
-  }
-
-  a:focus {
-    outline-color: #055252;
-    outline-width: 0.25em;
-    outline-style: solid;
-    border-radius: 0.25em;
-  }
-
-  a:hover {
-    color: #055252;
-    outline-color: transparent;
-    text-decoration: underline;
-
-  }
-
-  a:active {
-    outline-color: transparent;
+  /* Active button (higher specificity) */
+  .btn a.active {
+    background-color: #055252;
+    border-color: #000 #545454 #545454 #000;
+    color: #ffffff;
+    font-weight: bold;
   }
 
 }
