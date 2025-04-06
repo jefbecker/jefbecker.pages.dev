@@ -187,7 +187,6 @@ form {
 img {
   max-width: 100%;
   display: block;
-
 }
 
 figure {
@@ -297,7 +296,7 @@ footer {
   summary {
     background-color: #333;
   }
-  
+
   details :focus {
     outline-color: #26D9D6;
     outline-width: 0.25em;
@@ -525,7 +524,7 @@ footer {
     outline-width: 0.25em;
     outline-style: solid;
     border-radius: 0.25em;
-  } 
+  }
 
   /* General anchor styles */
   a {
