@@ -16,6 +16,10 @@ div {
   margin-bottom: 0.625em;
 }
 
+hr {
+  margin-bottom: 1em;
+}
+
 .nobr {
   white-space: nowrap;
 }
@@ -23,8 +27,8 @@ div {
 .card {
   border-radius: 0.25em;
   overflow: auto;
-  padding: 1.5em;
-  padding-bottom: 0em;
+  padding: 1em;
+  padding-bottom: 0.5em;
   padding-top: 0em;
 }
 
@@ -64,7 +68,7 @@ div {
 }
 
 /*html {
-  background: url(/images/buttons/jefbecker/cube_cian.png) no-repeat center center fixed; 
+  background: url(/images/buttons/jefbecker/cube_cyan.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -207,33 +211,50 @@ figure {
   width: 100%;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-container>div {
-  padding: 0.625em;
-  text-align: center;
+.card-flex-container>code>a {
+  text-decoration: none;
 }
 
 .card-flex-container {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 0.5em;
-  row-gap: 0.5em;
+  gap: 10px;
+  align-items: center;
   justify-content: left;
-  padding-bottom: 0.5em;
 }
 
-.collection-flex-container {
-  flex-wrap: wrap;
-  gap: 0.2em;
-  margin-bottom: 0em;
-  align-items: center;
-  justify-content: center;
-  line-height: 2em;
+.bottom-nav-flex-container {
+  display: flex;
+  justify-content: space-between;
 }
+
+.bottom-nav-flex-container>code {
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+  text-align: center;
+  width: 8em;
+}
+
+.bottom-nav-flex-container>code>a {
+  text-decoration: none;
+}
+
+.grid-flex-container>code>a {
+  text-decoration: none;
+}
+
+.grid-flex-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.grid-flex-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 .nav-flex-container {
   flex-wrap: wrap;
@@ -290,6 +311,10 @@ footer {
 
   code {
     background-color: #333;
+  }
+
+  .inverted code {
+    background-color: #222;
   }
 
   button {
@@ -486,6 +511,10 @@ footer {
     background-color: #e5e5e5;
   }
 
+  .inverted code {
+    background-color: #fff;
+  }
+
   blockquote {
     border-left: 0.3125em solid #333;
   }
@@ -642,18 +671,80 @@ footer {
 
 }
 
-@media only screen and (max-width: 45em) {
+@media only screen and (max-width: 15em) {
 
-  /* Styles for small screens (e.g., mobile devices) */
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .bottom-nav-flex-container>code {
+    width: auto;
+    gap: 10px;
+  }
 
 }
 
-@media only screen and (min-width: 37.5625em) and (max-width: 1020.25em) {
+@media only screen and (min-width: 15em) and (max-width: 20em) {
 
-  /* Styles for medium-sized screens (e.g., tablets) */
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .bottom-nav-flex-container>code {
+    width: auto;
+    gap: 10px;
+  }
+
 }
 
-@media only screen and (min-width: 1020.3125em) {
+@media only screen and (min-width: 20em) and (max-width: 30em) {
 
-  /* Styles for large screens (e.g., desktops) */
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .bottom-nav-flex-container>code {
+    width: auto;
+    gap: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 30em) and (max-width: 40em) {
+
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .bottom-nav-flex-container>code {
+    width: 8em;
+  }
+
+}
+
+@media only screen and (min-width: 40em) and (max-width: 50em) {
+
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .grid-flex-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+  }
+
 }

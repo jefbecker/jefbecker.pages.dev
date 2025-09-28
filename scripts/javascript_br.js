@@ -149,7 +149,7 @@ class LastFmRecentTracks {
                     <img aria-hidden="true" style="border-radius: 0.25em;" alt="Capa do álbum" width="80" height="80" src="${image}">
                 </div>
                 <div>
-                    <a target="_blank" href="${track.url}">${track.name}</a><br>
+                    <a href="${track.url}">${track.name}</a><br>
                     <small>${track.artist['#text']}</small><br>
                     <small>${date}</small>
                 </div>

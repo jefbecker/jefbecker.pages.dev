@@ -21,7 +21,7 @@
 <body>
   <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
   <header>
-    <a href="/"><img src="/images/jefbecker.png" title="JEFBECKER" style="display: inline-block;" class="center" alt="JEFBECKER LOGO" width="60" height="60"></a>
+    <img src="/images/jefbecker.png" title="JEFBECKER" style="display: inline-block;" class="center" alt="JEFBECKER LOGO" width="60" height="60">
     <nav class="btn nav-flex-container">
       <a title="Go to Home Page" href="/">Home</a>
       <a title="Go to Pages" href="/pages/">Pages</a>
@@ -34,7 +34,6 @@
   <div class="btn">
     <span><a title="Switch to English" class="active current" href="/archive/">English</a></span>
     <span><a title="Mudar para Português" href="/br/arquivo/">Português</a></span>
-    <code style="float: right;"><span class="emoji" aria-hidden="true">🚧 </span>Under Construction<span class="emoji" aria-hidden="true"> 🚧</span></code>
   </div>
 
   <main id="main">
@@ -44,31 +43,44 @@
         <img src="/images/cards/archive.webp" aria-hidden="true" style="border-radius: 0.25em ;" width="1000" class="center" alt="A corridor between two filing cabinets. On the right, there are boxes, and on the left, there are file binders.">
         <figcaption style="font-size:small">Credits: <a href="https://pixabay.com/photos/archive-boxes-shelf-folders-1850170">Pexels (Pixabay)</a></figcaption>
       </figure>
-      <br>
+
+      <p id="this-is-the-archive" style="text-align: center;">This is the Archive, my personal collection of assorted items. Here I catalog everything I own physically and digitally. What I've seen, heard, read, or simply want to keep. It's a virtual shelf open to the public.</p>
       <div class="card">
-        <h2>Books</h2>
+        <h2 id="books"><a title="Open the Book collection" href="/archive/books/">Books</a></h2>
         <hr>
-        <h3><a href="/archive/books/">Collection of physical and digital books</a></h3>
+        <div class="inverted code card-flex-container">
+          <code><a title="Go to Almanac of Affectionate Memories" href="/archive/books/#almanac-of-affectionate-memories">Almanac of Affectionate Memories</a></code>
+          <code><a title="Go to Atelier of Witch Hat" href="/archive/books/#atelier-of-witch-hat">Atelier of Witch Hat</a></code>
+          <code><a title="Go to Treasures of Ghanor" href="/archive/books/#treasures-of-ghanor">Treasures of Ghanor</a></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Collections</h2>
+        <h2 id="collections"><span href="#collections">Collections</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#collections">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Magazines</h2>
+        <h2 id="magazines"><span href="#magazines">Magazines</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#magazines">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Movies</h2>
+        <h2 id="movies"><span href="#movies">Movies</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#movies">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Music</h2>
+        <h2 id="music"><span href="#music">Music</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#music">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
         <h2>Radios</h2>
@@ -103,15 +115,13 @@
             <button onclick="document.getElementById('radio54247529').pause()">Pause</button>
           </div>
         </div>
-        <!-- <details>
-          <summary>Mostrar mais...</summary>
-          [=============]
-        </details> -->
       </div>
       <div class="card">
-        <h2>Shrines</h2>
+        <h2 id="shrines"><span href="#shrines">Shrines</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#shrines">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
         <h2>Site versions</h2>
@@ -148,36 +158,38 @@
             </div>
           </li>
         </ul>
-        <!-- <details>
-          <summary>Mostrar mais...</summary>
-          [=============]
-        </details> -->
       </div>
       <div class="card">
-        <h2>TV Shows</h2>
+        <h2 id="tv-shows"><span href="#tv-shows">TV Shows</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#tv-shows">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Videos</h2>
+        <h2 id="videos"><span href="#videos">Videos</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#videos">Nothing yet...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Other...</h2>
+        <h2 id="other"><span href="#other">Other</span></h2>
         <hr>
-        <h3>Soon...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nothing yet..." href="#other">Nothing yet...</span></code>
+        </div>
       </div>
     </article>
   </main>
 
   <footer>
     <div class="footer-flex-container">
-    <a href="/pages/about/" title="Go to About">About</a>
-    <a href="/pages/accessibility/" title="Go to Accessibility">Accessibility</a>
-    <a href="/pages/contact/" title="Contact me">Contact</a>
-    <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>
-    <a href="/pages/resources/" title="Go to Resources">Resources</a>
+      <a href="/pages/about/" title="Go to About">About</a>
+      <a href="/pages/accessibility/" title="Go to Accessibility">Accessibility</a>
+      <a href="/pages/contact/" title="Contact me">Contact</a>
+      <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>
+      <a href="/pages/resources/" title="Go to Resources">Resources</a>
     </div>
     <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a></p>
     <img src="/88x31.png" class="center" aria-hidden="true" alt="88x31 button" width="88" height="31" loading="lazy">

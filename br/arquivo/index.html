@@ -21,7 +21,7 @@
 <body>
   <a href="#main" class="skip-to-main-content-link">Pular para o conteúdo principal</a>
   <header>
-    <a href="/br"><img src="/images/jefbecker.png" title="JEFBECKER" style="display: inline-block;" class="center" alt="JEFBECKER LOGO" width="60" height="60"></a>
+    <img src="/images/jefbecker.png" title="JEFBECKER" style="display: inline-block;" class="center" alt="JEFBECKER LOGO" width="60" height="60">
     <nav class="btn nav-flex-container">
       <a title="Ir para o Início" href="/br/">Início</a>
       <a title="Ir para Páginas" href="/br/paginas/">Páginas</a>
@@ -34,7 +34,6 @@
   <div class="btn">
     <span><a title="Switch to English" href="/archive/">English</a></span>
     <span><a title="Mudar para Português" class="active current" href="/br/arquivo/">Português</a></span>
-    <code style="float: right;"><span class="emoji" aria-hidden="true">🚧 </span>Em Construção<span class="emoji" aria-hidden="true"> 🚧</span></code>
   </div>
 
   <main id="main">
@@ -44,31 +43,44 @@
         <img src="/images/cards/archive.webp" aria-hidden="true" style="border-radius: 0.25em ;" width="1000" class="center" alt="Um corredor no meio de duas estantes de arquivo. Na direita são caixas e na esquerda são fichários">
         <figcaption style="font-size:small">Créditos: <a href="https://pixabay.com/photos/archive-boxes-shelf-folders-1850170">Pexels (Pixabay)</a></figcaption>
       </figure>
-      <br>
+      <p id="este-e-o-arquivo" style="text-align: center;">Este é o Arquivo, minha coleção pessoal de itens diversos. Aqui fica catalogado tudo o que tenho física e digitalmente. O que eu vi, ouvi, li, ou simplesmente quero guardar. É uma estante virtual aberta ao público.</p>
       <div class="card">
-        <h2>Coleções</h2>
+        <h2 id="colecoes"><span href="#colecoes">Coleções</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#colecoes">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Filmes</h2>
+        <h2 id="filmes"><span href="#filmes">Filmes</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#filmes">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Livros</h2>
+        <h2 id="livros"><a title="Abrir a coleção de Livros" href="/br/arquivo/livros/">Livros</a></h2>
         <hr>
-        <h3><a href="/br/arquivo/livros/">Coleção de livros físicos e digitais.</a></h3>
+        <div class="inverted code card-flex-container">
+          <code><a title="Ir para Almanaque das Memórias Afetivas" href="/br/arquivo/livros/#almanaque-das-memorias-afetivas">Almanaque das Memórias Afetivas</a></code>
+          <code><a title="Ir para Atelier of Witch Hat" href="/br/arquivo/livros/#atelier-of-witch-hat">Atelier of Witch Hat</a></code>
+          <code><a title="Ir para Tesouros de Ghanor" href="/br/arquivo/livros/#tesouros-de-ghanor">Tesouros de Ghanor</a></code>
+        </div>
+      </div>
       </div>
       <div class="card">
-        <h2>Músicas</h2>
+        <h2 id="musicas"><span href="#musicas">Músicas</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#musicas">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Revistas</h2>
+        <h2 id="revistas"><span href="#revistas">Revistas</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#revistas">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
         <h2>Rádios</h2>
@@ -103,21 +115,20 @@
             <button onclick="document.getElementById('radio54247529').pause()">Pause</button>
           </div>
         </div>
-
-        <!-- <details>
-          <summary>Mostrar mais...</summary>
-          [=============]
-        </details> -->
       </div>
       <div class="card">
-        <h2>Séries</h2>
+        <h2 id="series"><span href="#series">Séries</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#series">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Templos</h2>
+        <h2 id="templos"><span href="#templos">Templos</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#templos">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
         <h2>Versões do Site</h2>
@@ -154,20 +165,20 @@
             </div>
           </li>
         </ul>
-        <!-- <details>
-          <summary>Mostrar mais...</summary>
-          [=============]
-        </details> -->
       </div>
       <div class="card">
-        <h2>Vídeos</h2>
+        <h2 id="videos"><span href="#videos">Vídeos</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#videos">Nada ainda...</span></code>
+        </div>
       </div>
       <div class="card">
-        <h2>Outros...</h2>
+        <h2 id="outros"><span href="#outros">Outros</span></h2>
         <hr>
-        <h3>Em breve...</h3>
+        <div class="inverted code card-flex-container">
+          <code><span title="Nada ainda..." href="#outros">Nada ainda...</span></code>
+        </div>
       </div>
     </article>
   </main>
