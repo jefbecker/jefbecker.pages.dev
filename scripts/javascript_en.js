@@ -44,7 +44,7 @@ xhttp.send();
 
 // Since //
 
-document.getElementById("date").innerHTML = "<strong>jefbecker.com | 2021 - 2025</strong>";
+document.getElementById("date").innerHTML = "<strong>jefbecker.com | 2021 - 2026</strong>";
 
 // Status - Latest status from status.cafe https://status.cafe //
 
