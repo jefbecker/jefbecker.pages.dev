@@ -671,6 +671,73 @@ footer {
 
 }
 
+/*Page Insight*/
+
+.pageinsight-container {
+  display: flex;
+  gap: 0.9375em;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin-bottom: 0em;
+}
+
+.pageinsight-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125em;
+  flex: 1 1 5em;
+  max-width: 5em;
+}
+
+.pageinsight-circle {
+  width: 3.20em;
+  height: 3.20em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  background: conic-gradient(var(--pi-color) var(--pi-value), #e0e0e0 0);
+  margin-bottom: 0em;
+}
+
+.pageinsight-circle::before {
+  content: "";
+  position: absolute;
+  width: 2.4em;
+  height: 2.4em;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 0em;
+}
+
+.pageinsight-circle span {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0em;
+}
+
+.pageinsight-label {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+.pageinsight-good {
+  --pi-color: #00c853;
+}
+
+.pageinsight-average {
+  --pi-color: #ffa000;
+}
+
+.pageinsight-bad {
+  --pi-color: #d50000;
+}
+
 @media only screen and (max-width: 15em) {
 
   .grid-flex-container {

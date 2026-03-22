@@ -84,32 +84,35 @@
         <a href="https://wave.webaim.org/report#/https://jefbecker.com"><img src="/images/buttons/wave.png" title="Teste de acessibilidade do site" alt="Certifica que o site não tem erros de acessibilidade"></a>
       </div>
       <h3>Desempenho</h3>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-      <canvas id="myChart" style="width:100%"></canvas>
-      <script>
-        const xValues = ["Desempenho (97%)", "Acessibilidade (100%)", "Boas Práticas (100%)", "SEO (100%)",];
-        const yValues = [97, 100, 100, 100, 0];
-        const barColors = ["#055252", "#055252", "#055252", "#055252", "#055252"];
-
-        new Chart("myChart", {
-          type: "bar",
-          data: {
-            labels: xValues,
-            datasets: [{
-              backgroundColor: barColors,
-              data: yValues
-            }]
-          },
-          options: {
-            legend: { display: false },
-            title: {
-              display: true,
-              text: "Teste de Desempenho do Google PageSpeed Insights"
-            }
-          }
-        });
-      </script>
-      <p style="font-size:small">Gráfico: <a href="https://www.w3schools.com/js/js_graphics_chartjs.asp" style="font-size:small">W3 Schools.</a>&ensp;Teste: <a href="https://pagespeed.web.dev/analysis/https-jefbecker-com/7kik95qmhy?form_factor=mobile" style="font-size:small">Google PageSpeed Insights.</a></p>
+      <div class="pageinsight-container">
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 98%;">
+            <span>98</span>
+          </div>
+          <div class="pageinsight-label">Performance</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">Accessibilidade</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">Boas Práticas</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">SEO</div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="https://pagespeed.web.dev/analysis/https-jefbecker-com/6q9cr7yu59?form_factor=mobile">Google PageSpeed Insights.</a></li>
+      </ul>
       <h3>Repositórios</h3>
       <ul>
         <li><a href="https://github.com/jefbecker/jefbecker.com">Neocities (Principal)</a></li>
@@ -179,7 +182,7 @@
     <p id="date">Desde 30 de Jul 2021</p>
     <noscript>
       <hr>
-      <p><span class="emoji" aria-hidden="true">⚠️ </span>Você está navegando com JavaScript desabilitado. Eu fiz o possível para que as funções básicas e de navegação do site não dependam de JavaScript para funcionar, mas elementos interativos como botões de acionamento, formulários e conteúdo remoto ainda precisam dessa função.</p>
+      <p>Você está navegando com JavaScript desabilitado. Eu fiz o possível para que as funções básicas e de navegação do site não dependam de JavaScript para funcionar, mas elementos interativos como botões de acionamento, formulários e conteúdo remoto ainda precisam dessa função.</p>
     </noscript>
   </footer>
   <script src="/scripts/since_br.js" defer></script>

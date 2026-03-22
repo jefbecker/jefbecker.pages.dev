@@ -1,3 +1,5 @@
+//ORIGINAL//
+
 class LastFmRecentTracks {
 
     constructor(apiKey, user, limit, showNowPlaying, cacheTime, domId) {
@@ -91,8 +93,8 @@ class LastFmRecentTracks {
 
         return this.html`
             <div style="display:flex;margin-bottom:1em">
-                <div style="flex:0 0 64px;margin-right:1em;">
-                    <img aria-hidden="true" alt="Album cover" src="${image}">
+                <div style="flex:0 0 64px;margin-right:1em">
+                    <img src="${image}">
                 </div>
                 <div>
                     <strong><a target="_blank" href="${track.url}">${track.name}</a></strong><br>
@@ -104,7 +106,7 @@ class LastFmRecentTracks {
 
     renderError(err) {
         console.error(err);
-        this.domContainer.innerHTML = `<div>Error loading recent tracks from Last.fm</div>`;
+        this.domContainer.innerHTML = `<div style="color:red">Error loading recent tracks from Last.fm</div>`;
     }
 
     html(literals, ...subs) {
@@ -145,5 +147,6 @@ class LastFmRecentTracks {
         return "lastfm_recent_tracks_cache";
     }
 }
-USERNAME", 1, true, 0, "lastfm_en");
+
+const lastfm = new LastFmRecentTracks("CHAVE API", "USUARIO", 5, true, 600, "ID HTML");
 lastfm.run();

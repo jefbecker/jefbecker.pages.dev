@@ -84,32 +84,35 @@
         <a href="https://wave.webaim.org/report#/https://jefbecker.com"><img src="/images/buttons/wave.png" title="Accessibility test" alt="Certifies that the website does not have accessibility errors"></a>
       </div>
       <h3>Performance</h3>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-      <canvas id="myChart" style="width: 100%"></canvas>
-      <script>
-        const xValues = ["Performance (97%)", "Accessibility (100%)", "Best Practices (100%)", "SEO (100%)",];
-        const yValues = [97, 100, 100, 100, 0];
-        const barColors = ["#055252", "#055252", "#055252", "#055252", "#055252"];
-
-        new Chart("myChart", {
-          type: "bar",
-          data: {
-            labels: xValues,
-            datasets: [{
-              backgroundColor: barColors,
-              data: yValues
-            }]
-          },
-          options: {
-            legend: { display: false },
-            title: {
-              display: true,
-              text: "Google PageSpeed Insights Performance Test"
-            }
-          }
-        });
-      </script>
-      <p style="font-size:small">Chart: <a href="https://www.w3schools.com/js/js_graphics_chartjs.asp" style="font-size:small">W3 Schools.</a>&ensp;Test: <a href="https://pagespeed.web.dev/analysis/https-jefbecker-com/7kik95qmhy?form_factor=mobile" style="font-size:small">Google PageSpeed Insights.</a></p>
+      <div class="pageinsight-container">
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 98%;">
+            <span>98</span>
+          </div>
+          <div class="pageinsight-label">Performance</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">Accessibility</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">Best Practices</div>
+        </div>
+        <div class="pageinsight-box">
+          <div class="pageinsight-circle pageinsight-good" style="--pi-value: 100%;">
+            <span>100</span>
+          </div>
+          <div class="pageinsight-label">SEO</div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="https://pagespeed.web.dev/analysis/https-jefbecker-com/6q9cr7yu59?form_factor=mobile">Google PageSpeed Insights.</a></li>
+      </ul>
       <h3>Repositories</h3>
       <ul>
         <li><a href="https://github.com/jefbecker/jefbecker.com">Neocities (Main)</a></li>
@@ -168,11 +171,11 @@
 
   <footer>
     <div class="footer-flex-container">
-    <a href="/pages/about/" title="Go to About">About</a>
-    <a href="/pages/accessibility/" title="Go to Accessibility">Accessibility</a>
-    <a href="/pages/contact/" title="Contact me">Contact</a>
-    <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>
-    <a href="/pages/resources/" title="Go to Resources">Resources</a>
+      <a href="/pages/about/" title="Go to About">About</a>
+      <a href="/pages/accessibility/" title="Go to Accessibility">Accessibility</a>
+      <a href="/pages/contact/" title="Contact me">Contact</a>
+      <a href="/pages/privacy/" title="Privacy Policy">Privacy</a>
+      <a href="/pages/resources/" title="Go to Resources">Resources</a>
     </div>
 
     <p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0">CC-BY-NC-SA 4.0</a></p>
@@ -180,7 +183,7 @@
     <p id="date">Since Jul 30, 2021</p>
     <noscript>
       <hr>
-      <p><span class="emoji" aria-hidden="true">⚠️ </span>You are browsing with JavaScript disabled. I have done my best to ensure that the basic navigation and functions of the site do not rely on JavaScript to work, but interactive elements such as toggle buttons, forms, and remote content still require this feature.</p>
+      <p>You are browsing with JavaScript disabled. I have done my best to ensure that the basic navigation and functions of the site do not rely on JavaScript to work, but interactive elements such as toggle buttons, forms, and remote content still require this feature.</p>
     </noscript>
   </footer>
   <script src="/scripts/since.js" defer></script>

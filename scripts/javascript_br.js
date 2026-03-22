@@ -141,7 +141,35 @@ class LastFmRecentTracks {
             image = image['#text'];
         }
 
-        const date = track['@attr']?.nowplaying ? "Ouvindo agora" : track.date['#text'];
+        let date;
+
+        if (track['@attr']?.nowplaying) {
+            date = "Tocando agora";
+        } else {
+            const timestamp = track.date.uts;
+            const d = new Date(timestamp * 1000);
+
+            const day = String(d.getDate()).padStart(2, '0');
+
+            let month = d.toLocaleString('pt-BR', {
+                month: 'short',
+                timeZone: 'America/Sao_Paulo'
+            }).replace('.', '');
+
+            const year = d.toLocaleString('pt-BR', {
+                year: 'numeric',
+                timeZone: 'America/Sao_Paulo'
+            });
+
+            const time = d.toLocaleTimeString('pt-BR', {
+                timeZone: 'America/Sao_Paulo',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false
+            });
+
+            date = `${day} ${month} ${year}, ${time}`;
+        }
 
         return this.html`
             <div style="display:flex;margin-bottom:1em">
