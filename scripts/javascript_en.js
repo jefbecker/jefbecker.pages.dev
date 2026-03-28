@@ -31,7 +31,7 @@ xhttp.onreadystatechange = function () {
         var date_obj = new Date(site_data.info.last_updated);
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        document.getElementById("lastupdate").innerHTML = days[date_obj.getDay()] + " " + months[date_obj.getMonth()] + " " + date_obj.getDate() + ", " + date_obj.getFullYear();
+        document.getElementById("lastupdate").innerHTML = days[date_obj.getDay()] + " , " + months[date_obj.getMonth()] + " " + date_obj.getDate() + ", " + date_obj.getFullYear();
 
     }
 };
