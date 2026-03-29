@@ -1,13 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://jefbecker.com/archive/books/atelier-of-witch-hat/</loc>
+    <lastmod>2026-03-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/archive/books/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/archive/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/archive/radio/</loc>
+    <lastmod>2026-03-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/archive/website-versions/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/arquivo/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/arquivo/livros/atelier-of-witch-hat/</loc>
+    <lastmod>2026-03-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/arquivo/livros/</loc>
+    <lastmod>2026-03-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/arquivo/radio/</loc>
+    <lastmod>2026-03-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/feed/</loc>
+    <lastmod>2026-03-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/links/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/acessibilidade/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/blog/20230625/este-site-e-perfeito/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/blog/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/contato/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/doar/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/listas/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/livro-de-visitas/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/privacidade/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/recursos/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/br/paginas/sobre/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/feed/</loc>
+    <lastmod>2026-03-21</lastmod>
+  </url>
+
   <url>
     <loc>https://jefbecker.com/</loc>
-    <changefreq>Always</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-03-29</lastmod>
   </url>
+
+  <url>
+    <loc>https://jefbecker.com/links/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/about/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/accessibility/</loc>
+    <lastmod>2026-03-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/blog/20230625/this-website-is-perfect/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/blog/</loc>
+    <lastmod>2026-03-29</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/contact/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/donate/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/guestbook/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
   <url>
     <loc>https://jefbecker.com/pages/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-03-28</lastmod>
   </url>
-  </urlset>
+
+  <url>
+    <loc>https://jefbecker.com/pages/lists/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/privacy/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/pages/resources/</loc>
+    <lastmod>2026-03-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://jefbecker.com/thumbnail/</loc>
+    <lastmod>2025-01-12</lastmod>
+  </url>
+
+</urlset>

@@ -48,7 +48,31 @@ document.getElementById("date").innerHTML = "<strong>jefbecker.com | 2021 - 2026
 
 // Status - Latest status from status.cafe https://status.cafe //
 
-fetch("https://status.cafe/users/jefbecker/status.json").then(t => t.json()).then(t => { if (!t.content.length) { document.getElementById("statusCafe-status").innerHTML = "No status yet."; return } document.getElementById("statusCafe-emoji").innerHTML = t.face, document.getElementById("statusCafe-time").innerHTML = t.timeAgo, document.getElementById("statusCafe-status").innerHTML = t.content });
+fetch("https://status.cafe/users/jefbecker/status.json")
+    .then(t => t.json())
+    .then(t => {
+        if (!t.content.length) {
+            document.getElementById("statusCafe-status").innerHTML = "Loading";
+            return;
+        }
+
+        document.getElementById("statusCafe-emoji").innerHTML = t.face;
+        document.getElementById("statusCafe-time").innerHTML = t.timeAgo;
+
+        const temp = document.createElement("div");
+        temp.innerHTML = t.content;
+
+        temp.querySelectorAll("a").forEach(link => {
+            link.removeAttribute("target");
+            const url = new URL(link.href);
+
+            if (url.hostname === "jefbecker.com") {
+                link.textContent = url.pathname || "/";
+            }
+        });
+
+        document.getElementById("statusCafe-status").innerHTML = temp.innerHTML;
+    });
 
 // Displaying scrobbles and last played on your site https://support.last.fm/t/last-fm-wordpress-plugin-displaying-scrobbles-and-last-played-on-your-site/57425/6 //
 
@@ -179,7 +203,7 @@ class LastFmRecentTracks {
                 <div>
                     <a href="${track.url}">${track.name}</a><br>
                     <small>${track.artist['#text']}</small><br>
-                    <small>${date}</small>
+                    <small><a href="https://www.last.fm/user/jefbecker">${date}</a></small>
                 </div>
             </div>`;
     }

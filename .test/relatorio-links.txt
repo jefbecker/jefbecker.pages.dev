@@ -1,0 +1,70 @@
+Total de links externos únicos: 320
+
+Links mortos por status:
+
+202:
+- https://www.imdb.com/user/ur101931955/
+
+403:
+- https://pixabay.com/photos/archive-boxes-shelf-folders-1850170
+- https://www.pexels.com/photo/grey-and-black-transistor-radio-157557/
+- https://www.pexels.com/pt-br/foto/pilha-de-livros-variados-de-romance-694740/
+- https://www.radios.com.br/aovivo/blumenau-web-radio/232892
+- https://www.radios.com.br/aovivo/clube-da-veia/40004
+- https://www.radios.com.br/aovivo/interativa-do-vale/117209
+- https://www.radios.com.br/aovivo/nightwave-plaza/235112
+- https://www.radios.com.br/aovivo/radio-905-fm-blumenau/87
+- https://www.radios.com.br/aovivo/radio-1063-fm/272865
+- https://www.radios.com.br/aovivo/radio-antena-1-881-fm/210630
+- https://www.radios.com.br/aovivo/radio-atlantida-1027-fm/16884
+- https://www.radios.com.br/aovivo/radio-bizz-fm/33124
+- https://www.radios.com.br/aovivo/radio-cbn-vale-do-itajai-959-fm/11266
+- https://www.radios.com.br/aovivo/radio-central-983-fm/238360
+- https://www.radios.com.br/aovivo/radio-clube-891-fm/11587
+- https://www.radios.com.br/aovivo/radio-fortaleza-983-fm/203944
+- https://www.radios.com.br/aovivo/radio-furb-1071-fm/13270
+- https://www.radios.com.br/aovivo/radio-germanica/18025
+- https://www.radios.com.br/aovivo/radio-numero-1/28959
+- https://www.radios.com.br/aovivo/radio-uniao-965-fm/38256
+- https://www.radios.com.br/aovivo/radio-vegas/183900
+- https://www.radios.com.br/aovivo/radio-web-esportiva/32406
+- https://www.radios.com.br/
+- https://simkl.com/4731819/dashboard/
+- https://thetyee.ca/Analysis/2023/08/08/Use-Really-Simple-Syndication/?ref=birchtree.me
+- https://pixabay.com/illustrations/backlinks-seo-link-building-7791387/
+- https://www.pexels.com/photo/a-vintage-typewriter-3601081/
+- https://www.pexels.com/photo/close-up-shot-of-banknotes-7624066
+- https://www.pexels.com/photo/low-light-photo-of-opened-book-159872
+- https://simkl.com/4731819/tv/watching/
+- https://simkl.com/4731819/tv/completed/
+- https://simkl.com/4731819/tv/dropped/
+- https://simkl.com/4731819/tv/plantowatch/
+- https://simkl.com/4731819/tv/hold/
+- https://simkl.com/4731819/movies/completed/
+- https://simkl.com/4731819/movies/plantowatch/
+- https://www.pexels.com/photo/opened-notebook-with-pencil-and-paintbrush-5797912/
+- https://www.pexels.com/photo/codes-on-tilt-shift-lens-2004161/
+- https://validator.w3.org/nu/?doc=https%3A%2F%2Fjefbecker.com%2F
+- https://stackoverflow.com/
+- https://thewebisfucked.com/
+
+404:
+- https://bsky.app/profile/did:plc:bstqhubwg5u3yfmojglwqaz4/rss
+- https://accessiblenet.neocities.org/
+- https://core6000.neocities.org/
+- https://hellojoy.neocities.org/
+
+429:
+- https://color.a11y.com/
+
+FALHA:
+- https://radiobizzfm.com/
+- https://www.radionumero1.com.br/
+- https://www.radiowebesportiva.com.br/
+- https://startafuckingblog.com/
+- https://motherfuckingrssreader.com/
+- mailto:mankind-scorn-defy@duck.com
+- https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+- mailto:0432rfef@duck.com
+- https://lerama.pcdomanual.com/
+

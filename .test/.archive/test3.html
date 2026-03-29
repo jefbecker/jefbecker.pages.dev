@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+  <title>Test Lab | jefbecker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Test Lab">
+  <meta name="fediverse:creator" content="@jefbecker@mastodon.social">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:image" content="https://jefbecker.com/images/buttons/jefbecker/card_cube_cyan.webp">
+  <link rel="icon" type="image/png" href="/images/avatar_yellow.png">
+  <link rel="alternate" type="application/atom+xml" title="en-US Feed" href="https://jefbecker.com/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="pt-BR Feed" href="https://jefbecker.com/feed_pt.xml">
+  <link rel="me" href="https://mastodon.social/@jefbecker">
+  <link rel="stylesheet" type="text/css" href="/lab/style_lab.css">
+</head>
+
+<body>
+  <header class="lab">
+    <h1>JEFBECKER</h1>
+    <nav>
+      <a href="/lab/test.html" class="button">LAB</a>
+      <a href="/lab/test2.html" class="button">LAB2</a>
+      <a aria-current="page" href="/lab/test3.html" class="button">LAB3</a>
+      <a href="/lab/test4.html" class="button">LAB4</a>
+    </nav>
+  </header>
+
+  <a href="index.html" class="current button-like-link active">en-US</button></a>
+  <a href="index.html"><button type="button" title="Mudar para Português">pt-BR</button></a>
+
+  <button onclick="switchHTML()">Switch HTML Code</button>
+  <hr>
+  <nav>
+    <a aria-current="page" href="/lab.html">Home</a>
+    <a href="/faq">FAQ</a>
+    <a aria-current="page" href="/feed.xml">RSS</a>
+    <a href="https://github.com/kevquirk/512kb.club">GitHub</a>
+  </nav>
+
+  <div class="title">
+    <h1 style="text-align: center;"><span class="emoji" aria-hidden="true">☢️ </span>Test Lab<span class="emoji" aria-hidden="true"> ☢️</span></h1>
+  </div>
+
+  <article>
+    <div class="title">
+      <h1>#<code style="font-family: system-ui"><span id="hitcount_br"></span>.</code><br><code style="font-family: system-ui">Last Updated: <span id="lastupdate_br"></span>.</code></h1>
+      <h1>#<code style="font-family: system-ui"><span id="hitcount"></span>.</code><br><code style="font-family: system-ui">Last Updated: <span id="lastupdate"></span>.</code></h1>
+      <hr>
+    </div>
+    <div id="c_widget"></div>
+    <script src="/comment-widget/comments.js"></script>
+  </article>
+
+  <footer class="lab">
+    <a href="/images/button_avatar_yellow.png"><img src="/images/button_avatar_yellow.png" alt="88x31 button" style="width:88px; height: 31px;" class="responsive"></a><br>
+    <a style="color: #ffffff;" href="/privacy.html" title="Privacy Policy"><strong>Privacy Policy</strong></a> |
+    <a style="color: #ffffff;" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="Creative Commons License - CC-BY-NC-SA 4.0"><strong>CC-BY-NC-SA 4.0</strong></a>
+    <p id="date"></p>
+    <div id="wcb" class="carbonbadge"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+  </footer>
+  <script src="/scripts/since.js"></script>
+  <script src="/scripts/hitcount_en.js"></script>
+  <script src="/scripts/hitcount_pt.js"></script>
+</body>
+
+</html>
