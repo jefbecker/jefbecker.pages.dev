@@ -4,13 +4,38 @@
 <link>https://jefbecker.com</link>
 <description>Feed RSS em Português do Brasil | jefbecker</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 29 Mar 2026 13:20:00 -0300</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 20:00:00 -0300</lastBuildDate>
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>VSCodium</generator>
 <managingEditor>rkz21bg4@duck.com (jefbecker)</managingEditor>
 <webMaster>rkz21bg4@duck.com (jefbecker)</webMaster>
 <atom:link href="https://jefbecker.com/br/feed/rss.xml" rel="self" type="application/rss+xml"/>
 <!--==================================================== -->
+<item>
+<link>https://jefbecker.com/br/paginas/blog/20260405/apresentando-a-banca-de-revistas/</link>
+<guid>https://jefbecker.com/br/paginas/blog/20260405/apresentando-a-banca-de-revistas/</guid>
+<title>Apresentando a Banca de Revistas</title>
+<pubDate>Sun, 05 Apr 2026 20:00:00 -0300</pubDate>
+<description>
+<![CDATA[
+<article>
+      <p>Olá, quanto tempo, não? Pois é, já faz quase três anos desde a última publicação neste blog. Muita coisa mudou por aqui e quero aproveitar a inauguração da banca de revistas para escrever um pouco. Essa banca é um projeto antigo, quase tão antigo quanto esse site e nunca tive a oportunidade de tirar do papel. Esse dia finalmente chegou.</p>
+      <p>Eu ficava pensando na melhor forma de montar uma estrutura para escanear coisas com o celular, mas nunca chegava em lugar nenhum. Isso foi completamente deixado de lado quando o aplicativo que eu usava pra isso foi morto pela Microslop: o Office Lens agora só funciona com o OneDrive. Desinstalei com raiva e segui em frente.</p>
+      <p>Por coincidência, poucos dias depois fui agraciado com um scanner de mesa, um HP Scanjet 200 que seria aposentado (e provavelmente esquecido) em algum depósito. Quando instalei o aparelho, fui lembrado que a HP também é uma empresa de merda. Eles descontinuaram o suporte desse produto, mas consegui achar nos confins da internet um driver básico sem aqueles programas desgraçados que eu sei que esse scanner tinha. Agora funciona até melhor do que antes.</p>
+      <h2>Qual é a da Banca?</h2>
+      <p>Bom, é um lugar para adquirir um exemplar da sua revista favorita. Eu já tive muitas revistas, uma coleção da Revista Recreio e alguns quadrinhos, fora outras revistas e hqs aleatórias. Só que perdi tudo devido a umidade e outras intempéries. Tentei por muitos anos recuperar essas coleções de forma digital, mas somente em 2024 eu consegui encontrar o que eu procurava.</p>
+      <p>Além de encontrar coisas pela internet, existia o problema de que certas coisas simplesmente não estão disponíveis. Mas agora posso escanear o que tenho em papel e disponibilizar para que outras pessoas possam ler.</p>
+      <h2>Primeira Edição na Banca</h2>
+      <p>A primeira edição deve ser especial, né? Então, está disponível para leitura a <a href="https://jefbecker.com/br/arquivo/revistas/revista-oficial-medabots/">edição nº 01 da Revista Oficial Medabots</a>. Eu lembro do dia que comprei ela, vinha com um Metabee de papelão, um Medacontrol e uma medalha Kabuto, ambos de papelão também. Era possível colocar a medalha no Medacontrol e nas costas do Metabee. Mas tudo se perdeu. Passei anos procurando por essa revista, até que em janeiro de 2024, eu encontrei um exemplar a venda num sebo do Rio de Janeiro pelo Portal dos Livreiros. Comprei sem pensar duas vezes.</p>
+      <p>É uma edição em ótima qualidade, pouquíssimas marcas e amassados (tem um pequeno rasgo na capa, mas foi devidamente consertado com fita pelo antigo dono). Removi os grampos para evitar a ferrugem e guardei. Hoje tirei ela do plástico e escaneei, aproveitei pra "consertar" a capa com o GIMP, então você nem verá o rasgo.</p>
+      <h2>Próximas Edições</h2>
+      <p>A Revista Oficial Medabots provavelmente não terá novas edições (é algo bem difícil de achar), mas vou adicionar outros títulos. Tenho várias revistas que coletei nos últimos anos em PDF e uma ou outra em papel também. Nem tudo será escaneado por mim, muita coisa já está disponível no Internet Archive, Annas Archive, Z-Library, etc. Se não, eu mesmo vou disponibilizar.</p>
+      <p>Então é isso, aproveite a revista e aguarde outros títulos na banca. Vai ter Revista Recreio, Rap Rima, Rap Brasil, Turma da Mônica Jovem, Ilustrar Magazine, Worldbuilding Magazine, PagedOut, entre outras.</p>
+      <p>Tem outras coisas novas no site também. A <a href="https://jefbecker.com/br/arquivo/livros/">página de livros</a> foi adicionada, mas é só a minha biblioteca pessoal, então não tem links para ler as obras. Quem sabe algum dia... Tem também as <a href="https://jefbecker.com/br/arquivo/radio/">Rádios online</a>, se quiser ouvir. Fora isso, terminei a <a href="https://jefbecker.com/br/links/">página de links</a> e cheguei nas versões definitivas de 99% do site. Agora é só ir adicionando mais coisas.</p>
+    </article>
+]]>
+</description>
+</item>
 <item>
 <link>https://jefbecker.com/br/paginas/blog/20230625/este-site-e-perfeito/</link>
 <guid>https://jefbecker.com/br/paginas/blog/20230625/este-site-e-perfeito/</guid>

@@ -23,6 +23,12 @@ function walk(dir, fileList = []) {
     const stat = fs.statSync(fullPath);
 
     if (stat.isDirectory()) {
+      // 🚫 Ignorar diretórios que começam com "."
+      if (file.startsWith(".")) return;
+
+      // 🚫 Ignorar diretório "thumbnail"
+      if (file === "thumbnail") return;
+
       walk(fullPath, fileList);
     } else if (file === "index.html") {
       fileList.push(fullPath);

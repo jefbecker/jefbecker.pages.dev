@@ -4,13 +4,38 @@
 <link>https://jefbecker.com</link>
 <description>Feed RSS in English | jefbecker</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 29 Mar 2026 13:20:00 -0300</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 20:00:00 -0300</lastBuildDate>
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>VSCodium</generator>
 <managingEditor>rkz21bg4@duck.com (jefbecker)</managingEditor>
 <webMaster>rkz21bg4@duck.com (jefbecker)</webMaster>
 <atom:link href="https://jefbecker.com/feed/rss.xml" rel="self" type="application/rss+xml"/>
 <!--==================================================== -->
+<item>
+<link>https://jefbecker.com/pages/blog/20260405/introducing-the-newsstand/</link>
+<guid>https://jefbecker.com/pages/blog/20260405/introducing-the-newsstand/</guid>
+<title>Introducing The Newsstand</title>
+<pubDate>Sun, 05 Apr 2026 20:00:00 -0300</pubDate>
+<description>
+<![CDATA[
+<article>
+      <p>Hello, long time no see, right? Well, it's been almost three years since the last post on this blog. A lot has changed around here, and I want to take advantage of the launch of the newsstand to write a bit. This newsstand is an old project, almost as old as this website, and I never had the chance to bring it to life. That day has finally arrived.</p>
+      <p>I kept thinking about the best way to set up a structure to scan things with my phone, but never got anywhere. That was completely abandoned when the app I used for this was killed by Microslop: Office Lens now only works with OneDrive. I angrily uninstalled it and moved on.</p>
+      <p>By coincidence, a few days later I was gifted a flatbed scanner, an HP Scanjet 200 that was going to be retired (and probably forgotten) in some storage room. When I installed the device, I was reminded that HP is also a terrible company. They discontinued support for this product, but I managed to find, in the depths of the internet, a basic driver without those awful programs I know this scanner used to have. Now it works even better than before.</p>
+      <h2>What's the Deal with the Newsstand?</h2>
+      <p>Well, it's a place to get a copy of your favorite magazine. I used to have many magazines: a collection of Revista Recreio and some comics, along with other random magazines and comics. But I lost everything due to humidity and other mishaps. I tried for many years to recover these collections digitally, but only in 2024 did I manage to find what I was looking for.</p>
+      <p>Besides finding things online, there was the issue that some items simply aren't available. But now I can scan what I have on paper and make it available for others to read.</p>
+      <h2>First Issue on the Newsstand</h2>
+      <p>The first issue has to be special, right? So, available for reading is <a href="https://jefbecker.com/archive/magazines/official-medabots-magazine/">issue #01 of the Official Medabots Magazine</a>. I remember the day I bought it: it came with a cardboard Metabee, a Medacontrol, and a Kabuto medal, both also made of cardboard. It was possible to place the medal in the Medacontrol and on Metabee's back. But all of that was lost. I spent years searching for this magazine until, in January 2024, I found a copy for sale in a used bookstore in Rio de Janeiro through Portal dos Livreiros. I bought it without thinking twice.</p>
+      <p>It's a copy in excellent condition, with very few marks and creases (there's a small tear on the cover, but it was properly fixed with tape by the previous owner). I removed the staples to prevent rust and stored it away. Today I took it out of the plastic and scanned it, and I took the opportunity to “fix” the cover with GIMP, so you won't even notice the tear.</p>
+      <h2>Next Issues</h2>
+      <p>The Official Medabots Magazine will probably not have new issues (it's quite hard to find), but I will add other titles. I have several magazines that I've collected over the past few years in PDF and a few in paper as well. Not everything will be scanned by me, many things are already available on the Internet Archive, Anna's Archive, Z-Library, etc. If not, I'll make them available myself.</p>
+      <p>So that's it, enjoy the magazine and stay tuned for other titles on the newsstand. There will be Revista Recreio, Rap Rima, Rap Brasil, Turma da Mônica Jovem, Ilustrar Magazine, Worldbuilding Magazine, PagedOut, among others.</p>
+      <p>There are other new things on the website as well. The <a href="https://jefbecker.com/archive/books/">books page</a> has been added, but it's just my personal library, so there are no links to read the works. Maybe someday… There are also <a href="https://jefbecker.com/archive/radio/">online radios</a>, if you want to listen. Aside from that, I finished the <a href="https://jefbecker.com/links/">links page</a> and reached the final versions of 99% of the website. Now it's just a matter of adding more things.</p>
+    </article>
+]]>
+</description>
+</item>
 <item>
 <link>https://jefbecker.com/pages/blog/20230625/this-website-is-perfect/</link>
 <guid>https://jefbecker.com/pages/blog/20230625/this-website-is-perfect/</guid>
