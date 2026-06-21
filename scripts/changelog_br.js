@@ -37,7 +37,7 @@ async function loadCommits(user, repo, containerId, limit = 10) {
 
             return `
                 <li>
-                    <a href="${link}" target="_blank">
+                    <a title="${message}" href="${link}">
                         ${message}
                     </a><br>
                     <small>${date}</small>

@@ -21,7 +21,7 @@ xhttp.onreadystatechange = function () {
     }
 };
 
-xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=jefbecker", true);
+xhttp.open("GET", "https://i2b7s8.twilight-credit-f3ea.workers.dev/", true);
 xhttp.send();
 
 var xhttp = new XMLHttpRequest();
@@ -35,12 +35,16 @@ xhttp.onreadystatechange = function () {
 
     }
 };
-xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=jefbecker", true);
+xhttp.open("GET", "https://i2b7s8.twilight-credit-f3ea.workers.dev/", true);
 xhttp.send();
 
 // Lastplayed - Last played song in last.fm by biancarosa: https://github.com/biancarosa/lastfm-last-played //
 
-// let user = "jefbecker", url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song", song = document.querySelector("#lfmSong"), lastplayed = document.querySelector("#lfmTime"); fetch(url).then(function (e) { return e.json() }).then(function (e) { song.innerHTML = e.track.name + " - " + e.track.artist["#text"], lastplayedunix = parseInt(e.track.date.uts), lastplayed.innerHTML = timeSince(lastplayedunix) }); var timeSince = function (e) { "object" != typeof e && (e = new Date(e)); var t, o = Math.floor(new Date().getTime() / 1e3 - e), r = Math.floor(o / 31536e3); return r >= 1 ? t = "year" : (r = Math.floor(o / 2592e3)) >= 1 ? t = "month" : (r = Math.floor(o / 86400)) >= 1 ? t = "day" : (r = Math.floor(o / 3600)) >= 1 ? t = "hour" : (r = Math.floor(o / 60)) >= 1 ? t = "minute" : (r = o, t = "second"), (r > 1 || 0 === r) && (t += "s"), r + " " + t + " ago" }; //
+/*DISABLED SCRIPT
+
+let user = "jefbecker", url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song", song = document.querySelector("#lfmSong"), lastplayed = document.querySelector("#lfmTime"); fetch(url).then(function (e) { return e.json() }).then(function (e) { song.innerHTML = e.track.name + " - " + e.track.artist["#text"], lastplayedunix = parseInt(e.track.date.uts), lastplayed.innerHTML = timeSince(lastplayedunix) }); var timeSince = function (e) { "object" != typeof e && (e = new Date(e)); var t, o = Math.floor(new Date().getTime() / 1e3 - e), r = Math.floor(o / 31536e3); return r >= 1 ? t = "year" : (r = Math.floor(o / 2592e3)) >= 1 ? t = "month" : (r = Math.floor(o / 86400)) >= 1 ? t = "day" : (r = Math.floor(o / 3600)) >= 1 ? t = "hour" : (r = Math.floor(o / 60)) >= 1 ? t = "minute" : (r = o, t = "second"), (r > 1 || 0 === r) && (t += "s"), r + " " + t + " ago" }; 
+
+*/
 
 // Since //
 
@@ -160,7 +164,7 @@ class LastFmRecentTracks {
     template(track) {
         let image = track.image.find(img => img.size === "large");
         if (!image || !image['#text']) {
-            image = "https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png";
+            image = "images/lastfm.webp";
         } else {
             image = image['#text'];
         }
@@ -197,13 +201,13 @@ class LastFmRecentTracks {
 
         return this.html`
             <div style="display:flex;margin-bottom:1em">
-                <div style="flex:0 0 80px;margin-right:1em;">
-                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Capa do álbum" width="80" height="80" src="${image}">
+                <div style="flex:0 0 5em;margin-right:1em;">
+                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Album cover" width="80" height="80" src="${image}">
                 </div>
                 <div>
-                    <a href="${track.url}">${track.name}</a><br>
+                    <a title="Ir para a música atual no Last.fm" href="${track.url}">${track.name}</a><br>
                     <small>${track.artist['#text']}</small><br>
-                    <small><a href="https://www.last.fm/user/jefbecker">${date}</a></small>
+                    <small><a title="Ir para o meu perfil para ver scrobbles no Last.fm" href="https://www.last.fm/user/jefbecker">${date}</a></small>
                 </div>
             </div>`;
     }

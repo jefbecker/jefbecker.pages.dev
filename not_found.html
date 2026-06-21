@@ -5,7 +5,7 @@
   <title>404 Page Not Found | jefbecker</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NOT FOUND: This page doesn't exist">
+  <meta name="description" content="NOT FOUND: This page doesn't exist or has been removed">
   <meta name="fediverse:creator" content="@jefbecker@mastodon.social">
   <meta name="robots" content="noindex, nofollow">
   <meta property="og:image" content="https://jefbecker.com/images/cards/404.webp">
@@ -43,12 +43,17 @@
 
     <article>
       <figure>
-        <img src="/images/cards/404.webp" aria-hidden="true" style="border-radius: 0.25em;" width="1000" class="center">
+        <img src="/images/cards/404.webp" aria-hidden="true" style="border-radius: 0.25em;" width="1000" class="center"aria-hidden="true" alt="An image representing a not found alert.">
       </figure>
       <p>The page you are looking for does not exist or has not been built yet. Please use the links available at the top and bottom of the page to navigate the site. If you prefer, search for the desired term in the search box:</p>
-      <div id="widdget" style="width:100%;margin:10px 0;">
-        <form style="position:relative" method="get" action="https://duckduckgo.com/" target="_blank">
-          <div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit" title="Search on DuckDuckGo">&#128269;</button></div><input type="text" name="q" placeholder="Search on DuckDuckGo" /><input type="hidden" name="sites" value="jefbecker.com" /><input type="hidden" name="kn" value="1" />
+      <div id="widdget" style="width:100%;">
+        <form style="position:relative" method="get" action="https://duckduckgo.com/">
+          <div style="float:right;position:absolute;top:0;right:0em;z-index:3">
+            <button type="submit" title="Search on DuckDuckGo">&#128269;</button>
+          </div>
+          <input type="text" name="q" placeholder="Search on DuckDuckGo">
+          <input type="hidden" name="sites" value="jefbecker.com">
+          <input type="hidden" name="kn" value="1">
         </form>
       </div>
     </article>
