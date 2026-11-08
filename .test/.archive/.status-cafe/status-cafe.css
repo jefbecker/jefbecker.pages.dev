@@ -34,7 +34,7 @@ body {
 }
 
 .faces {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     max-width: 600px;
 }
 
@@ -54,7 +54,7 @@ h3 {
 }
 
 .flash {
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     color: #055252;
 }
 
@@ -124,7 +124,7 @@ dd {
     padding-top: 10px;
     margin-left: 5px;
     text-align: left;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .edit-status {
@@ -169,7 +169,7 @@ dd {
 
 .info {
 
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* Emoji picker */
@@ -200,7 +200,7 @@ dd {
     }
 
     .faces {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
         max-width: 600px;
     }
 
@@ -220,7 +220,7 @@ dd {
     }
 
     .flash {
-        padding: 0.5em 1em;
+        padding: 0.5rem 1rem;
         color: #055252;
     }
 
@@ -290,7 +290,7 @@ dd {
         padding-top: 10px;
         margin-left: 5px;
         text-align: left;
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
 
     .edit-status {
@@ -335,7 +335,7 @@ dd {
 
     .info {
 
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
 
     /* Emoji picker */

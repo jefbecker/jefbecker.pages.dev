@@ -3,21 +3,21 @@
 }
 
 main {
-  margin: 0em;
-  line-height: 1.5em;
+  margin: 0rem;
+  line-height: 1.5rem;
 }
 
 .btn {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 div {
-  margin-bottom: 0.625em;
+  margin-bottom: 0.625rem;
 }
 
 hr {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .nobr {
@@ -25,38 +25,38 @@ hr {
 }
 
 .card {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   overflow: auto;
-  padding: 1em;
-  padding-bottom: 0.5em;
-  padding-top: 0em;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0rem;
 }
 
 /* DDG search widdget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg */
 
 #widdget input {
-  border-radius: 0.25em 0 0 0.25em;
+  border-radius: 0.25rem 0 0 0.25rem;
   border-right: 0;
-  border: 1px solid #222;
+  border: 0.06rem solid #222;
   box-sizing: border-box;
   display: block;
-  font-size: 1em;
-  height: 2em;
+  font-size: 1rem;
+  height: 2rem;
   outline: none;
-  padding: 4px;
-  width: calc(100% - 41px);
+  padding: 0.25rem;
+  width: calc(100% - 2.6rem);
 }
 
 #widdget button {
   background-image: linear-gradient(#cacaca, #929292);
-  border-radius: 0 0.25em 0.25em 0;
+  border-radius: 0 0.25rem 0.25rem 0;
   border: 0;
   color: #e5e5e5;
   cursor: pointer;
   float: left;
-  height: 2.37em;
+  height: 2rem;
   padding: 0;
-  width: 2.999em;
+  width: 2.5rem;
 }
 
 #widdget button:active {
@@ -74,11 +74,11 @@ hr {
   -o-background-size: cover;
   background-size: cover;
   image-rendering: optimizeSpeed;
-  filter: blur(0px);
+  filter: blur(0rem);
 }*/
 
 .skip-to-main-content-link {
-  padding-left: 0.625em;
+  padding-left: 0.625rem;
   position: absolute;
   transform: translateY(-500%);
 }
@@ -96,44 +96,44 @@ hr {
 
 body {
   font-family: system-ui;
-  font-size: 1em;
-  margin: 0.625em auto;
-  max-width: 50em;
-  padding: 0 0.625em;
+  font-size: 1rem;
+  margin: 0.625rem auto;
+  max-width: 50rem;
+  padding: 0 0.625rem;
 }
 
 header {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   font-family: system-ui;
-  font-size: 1em;
-  margin: 0.625em auto;
-  max-width: 50em;
-  padding: 0.625em;
+  font-size: 1rem;
+  margin: 0.625rem auto;
+  max-width: 50rem;
+  padding: 0.625rem;
   text-align: center;
 }
 
 .title {
-  padding: 0em 0em 0em;
+  padding: 0rem 0rem 0rem;
   text-align: center;
   line-height: normal;
 }
 
 article {
-  margin: 0.625em auto;
-  padding: 0 0 0em;
+  margin: 0.625rem auto;
+  padding: 0 0 0rem;
 }
 
 code {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   font-size: medium;
-  padding: 0.1875em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 
 blockquote {
-  font-size: 0.875em;
-  padding-left: 0.625em;
+  font-size: 0.875rem;
+  padding-left: 0.625rem;
 }
 
 .center {
@@ -143,33 +143,33 @@ blockquote {
 }
 
 ul {
-  padding-left: 1.25em;
+  padding-left: 1.25rem;
 }
 
 summary {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
 details {
-  border-radius: 0.25em;
-  margin-bottom: 0.625em;
-  padding-block: 0.1em;
-  padding-bottom: 0.1em;
-  padding-left: 0.625em;
-  padding-right: 0.625em;
+  border-radius: 0.25rem;
+  margin-bottom: 0.625rem;
+  padding-block: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 textarea {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   box-sizing: border-box;
-  height: 15em;
-  padding: 1em;
+  height: 15rem;
+  padding: 1rem;
   width: 100%;
 }
 
 button {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -181,13 +181,13 @@ table {
 
 td,
 th {
-  border: 0.0625em solid #e5e5e5;
-  padding: 0.5em;
+  border: 0.0625rem solid #e5e5e5;
+  padding: 0.5rem;
   text-align: left;
 }
 
 form {
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -204,7 +204,7 @@ figure {
 
 .atx {
   font-family: system-ui;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .responsive {
@@ -218,7 +218,7 @@ figure {
 .card-flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
   justify-content: left;
 }
@@ -229,10 +229,10 @@ figure {
 }
 
 .bottom-nav-flex-container>code {
-  padding-inline-start: 1em;
-  padding-inline-end: 1em;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
   text-align: center;
-  width: 8em;
+  width: 8rem;
 }
 
 .bottom-nav-flex-container>code>a {
@@ -246,7 +246,7 @@ figure {
 .grid-flex-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .grid-flex-container img {
@@ -258,8 +258,8 @@ figure {
 
 .nav-flex-container {
   flex-wrap: wrap;
-  gap: 0.2em;
-  margin-bottom: 0em;
+  gap: 0.2rem;
+  margin-bottom: 0rem;
   align-items: center;
   justify-content: center;
 }
@@ -267,15 +267,15 @@ figure {
 .footer-flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
 
 footer {
-  border-radius: 0.25em;
-  font-size: 1em;
-  padding: 0.625em;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.625rem;
   text-align: center;
 }
 
@@ -306,7 +306,7 @@ footer {
   }
 
   blockquote {
-    border-left: 0.3125em solid #e5e5e5;
+    border-left: 0.3125rem solid #e5e5e5;
   }
 
   code {
@@ -325,9 +325,9 @@ footer {
 
   button :focus {
     outline-color: #055252;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   details,
@@ -337,21 +337,21 @@ footer {
 
   details :focus {
     outline-color: #26D9D6;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   /* Float four columns side by side */
   .column {
     float: left;
-    padding: 0 0.3125em 0.625em;
+    padding: 0 0.3125rem 0.625rem;
     width: 50%;
   }
 
   /* Remove extra left and right margins, due to padding */
   .row {
-    margin: 0 -0.3125em;
+    margin: 0 -0.3125rem;
   }
 
   /* Clear floats after the columns */
@@ -362,9 +362,9 @@ footer {
   }
 
   /* Responsive columns */
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 37.5rem) {
     .column {
-      margin-bottom: 0.625em;
+      margin-bottom: 0.625rem;
       width: 100%;
     }
   }
@@ -387,9 +387,9 @@ footer {
 
   button:focus {
     outline-color: #26D9D6;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   /* General anchor styles */
@@ -409,9 +409,9 @@ footer {
 
   a:focus {
     outline-color: #26D9D6;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   a:hover {
@@ -426,12 +426,12 @@ footer {
 
   /* Button styles */
   .btn a {
-    border: 0.125em solid #222;
-    border-radius: 0.25em;
+    border: 0.125rem solid #222;
+    border-radius: 0.25rem;
     border-color: #545454 #000 #000 #545454;
     cursor: pointer;
-    margin-top: 0em;
-    padding: 0.1em 0.15em 0.15em 0.15em;
+    margin-top: 0rem;
+    padding: 0.1rem 0.15rem 0.15rem 0.15rem;
     text-align: start;
     background-color: #e5e5e5;
     color: #222;
@@ -442,13 +442,13 @@ footer {
   .btn a:visited {
     color: #222;
     margin: auto;
-    padding: 0.0625em;
+    padding: 0.0625rem;
     white-space: nowrap;
   }
 
   .btn a:focus {
-    border-radius: 0.25em;
-    border: 0.125em solid #222;
+    border-radius: 0.25rem;
+    border: 0.125rem solid #222;
     font-weight: normal;
     white-space: nowrap;
   }
@@ -516,7 +516,7 @@ footer {
   }
 
   blockquote {
-    border-left: 0.3125em solid #333;
+    border-left: 0.3125rem solid #333;
   }
 
   details,
@@ -526,21 +526,21 @@ footer {
 
   details :focus {
     outline-color: #26D9D6;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   /* Float four columns side by side */
   .column {
     float: left;
-    padding: 0 0.3125em 0.625em;
+    padding: 0 0.3125rem 0.625rem;
     width: 50%;
   }
 
   /* Remove extra left and right margins, due to padding */
   .row {
-    margin: 0 -0.3125em;
+    margin: 0 -0.3125rem;
   }
 
   /* Clear floats after the columns */
@@ -551,9 +551,9 @@ footer {
   }
 
   /* Responsive columns */
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 37.5rem) {
     .column {
-      margin-bottom: 0.625em;
+      margin-bottom: 0.625rem;
       width: 100%;
     }
   }
@@ -576,9 +576,9 @@ footer {
 
   button :focus {
     outline-color: #055252;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   /* General anchor styles */
@@ -598,9 +598,9 @@ footer {
 
   a:focus {
     outline-color: #26D9D6;
-    outline-width: 0.25em;
+    outline-width: 0.25rem;
     outline-style: solid;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
   }
 
   a:hover {
@@ -615,12 +615,12 @@ footer {
 
   /* Button styles */
   .btn a {
-    border: 0.125em solid #222;
-    border-radius: 0.25em;
+    border: 0.125rem solid #222;
+    border-radius: 0.25rem;
     border-color: #545454 #000 #000 #545454;
     cursor: pointer;
-    margin-top: 0em;
-    padding: 0.1em 0.15em 0.15em 0.15em;
+    margin-top: 0rem;
+    padding: 0.1rem 0.15rem 0.15rem 0.15rem;
     text-align: start;
     background-color: #e5e5e5;
     color: #222;
@@ -631,13 +631,13 @@ footer {
   .btn a:visited {
     color: #222;
     margin: auto;
-    padding: 0.0625em;
+    padding: 0.0625rem;
     white-space: nowrap;
   }
 
   .btn a:focus {
-    border-radius: 0.25em;
-    border: 0.125em solid #222;
+    border-radius: 0.25rem;
+    border: 0.125rem solid #222;
     font-weight: normal;
     white-space: nowrap;
   }
@@ -675,55 +675,55 @@ footer {
 
 .pageinsight-container {
   display: flex;
-  gap: 0.9375em;
+  gap: 0.9375rem;
   flex-wrap: wrap;
   white-space: nowrap;
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .pageinsight-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.3125em;
-  flex: 1 1 5em;
-  max-width: 5em;
+  gap: 0.3125rem;
+  flex: 1 1 5rem;
+  max-width: 5rem;
 }
 
 .pageinsight-circle {
-  width: 3.20em;
-  height: 3.20em;
+  width: 3.20rem;
+  height: 3.20rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   color: #000;
   background: conic-gradient(var(--pi-color) var(--pi-value), #e0e0e0 0);
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .pageinsight-circle::before {
   content: "";
   position: absolute;
-  width: 2.4em;
-  height: 2.4em;
+  width: 2.4rem;
+  height: 2.4rem;
   background: #fff;
   border-radius: 50%;
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .pageinsight-circle span {
   position: relative;
   z-index: 1;
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .pageinsight-label {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: center;
-  margin-bottom: 0em;
+  margin-bottom: 0rem;
 }
 
 .pageinsight-good {
@@ -738,52 +738,52 @@ footer {
   --pi-color: #d50000;
 }
 
-@media only screen and (max-width: 15em) {
+@media only screen and (max-width: 15rem) {
 
   .grid-flex-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .bottom-nav-flex-container>code {
     width: auto;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
 }
 
-@media only screen and (min-width: 15em) and (max-width: 20em) {
+@media only screen and (min-width: 15rem) and (max-width: 20rem) {
 
   .grid-flex-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .bottom-nav-flex-container>code {
     width: auto;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
 }
 
-@media only screen and (min-width: 20em) and (max-width: 30em) {
+@media only screen and (min-width: 20rem) and (max-width: 30rem) {
 
   .grid-flex-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .bottom-nav-flex-container>code {
     width: auto;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
 }
 
-@media only screen and (min-width: 30em) and (max-width: 40em) {
+@media only screen and (min-width: 30rem) and (max-width: 40rem) {
 
   .grid-flex-container {
     display: grid;
@@ -791,27 +791,27 @@ footer {
   }
 
   .bottom-nav-flex-container>code {
-    width: 8em;
+    width: 8rem;
   }
 
 }
 
-@media only screen and (min-width: 40em) and (max-width: 50em) {
+@media only screen and (min-width: 40rem) and (max-width: 50rem) {
 
   .grid-flex-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
   }
 
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 50rem) {
 
   .grid-flex-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
   }
 
 }

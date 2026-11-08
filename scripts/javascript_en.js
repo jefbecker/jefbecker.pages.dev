@@ -201,8 +201,8 @@ class LastFmRecentTracks {
 
         return this.html`
             <div style="display:flex;margin-bottom:1em">
-                <div style="flex:0 0 5em;margin-right:1em;">
-                    <img aria-hidden="true" style="border-radius: 0.25em;" alt="Album cover" width="80" height="80" src="${image}">
+                <div style="flex:0 0 5rem;margin-right:1rem;">
+                    <img aria-hidden="true" style="border-radius: 0.25rem;" alt="Album cover" width="80" height="80" src="${image}">
                 </div>
                 <div>
                     <a title="Go to current track on Last.fm" href="${track.url}">${track.name}</a><br>
